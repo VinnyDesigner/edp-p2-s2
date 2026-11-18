@@ -1,0 +1,107 @@
+[
+  {
+    "pt": {
+      "x": 700,
+      "y": 350
+    },
+    "elTag": "CANVAS",
+    "elClass": "",
+    "chain": [
+      {
+        "tag": "CANVAS",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-0 h-full w-full ",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-x-0",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative min-h-0 flex-1 overflow-hidden ring-1 ring-white/10",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative flex h-full w-full flex-col",
+        "text": "The agent layer for\nvideo understanding\nWatch demo"
+      }
+    ]
+  },
+  {
+    "pt": {
+      "x": 900,
+      "y": 350
+    },
+    "elTag": "CANVAS",
+    "elClass": "",
+    "chain": [
+      {
+        "tag": "CANVAS",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-0 h-full w-full ",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-x-0",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative min-h-0 flex-1 overflow-hidden ring-1 ring-white/10",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative flex h-full w-full flex-col",
+        "text": "The agent layer for\nvideo understanding\nWatch demo"
+      }
+    ]
+  },
+  {
+    "pt": {
+      "x": 1100,
+      "y": 350
+    },
+    "elTag": "CANVAS",
+    "elClass": "",
+    "chain": [
+      {
+        "tag": "CANVAS",
+        "class": "",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-0 h-full w-full ",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "absolute inset-x-0",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative min-h-0 flex-1 overflow-hidden ring-1 ring-white/10",
+        "text": ""
+      },
+      {
+        "tag": "DIV",
+        "class": "relative flex h-full w-full flex-col",
+        "text": "The agent layer for\nvideo understanding\nWatch demo"
+      }
+    ]
+  }
+]

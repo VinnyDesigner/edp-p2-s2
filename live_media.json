@@ -1,0 +1,89 @@
+{
+  "videos": [
+    {
+      "src": "https://jockey-media.pages.dev/v1/video/demo/piccadilly-night.mp4",
+      "currentSrc": "https://jockey-media.pages.dev/v1/video/demo/piccadilly-night.mp4",
+      "className": "pointer-events-none fixed inset-0 z-[70] h-full w-full object-cover opacity-0",
+      "poster": ""
+    },
+    {
+      "src": "https://jockey-media.pages.dev/v1/video/footer/footer-clip.mp4",
+      "currentSrc": "https://jockey-media.pages.dev/v1/video/footer/footer-clip.mp4",
+      "className": "pointer-events-none absolute left-0 top-0 h-px w-px opacity-0",
+      "poster": ""
+    },
+    {
+      "src": "https://jockey-media.pages.dev/v1/video/demo/piccadilly-night.mp4",
+      "currentSrc": "https://jockey-media.pages.dev/v1/video/demo/piccadilly-night.mp4",
+      "className": "",
+      "poster": ""
+    }
+  ],
+  "imgs": [
+    {
+      "src": "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt": "",
+      "className": "absolute inset-0 h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-canyon.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-ridge.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-overlook.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt": "",
+      "className": "absolute inset-0 h-full w-full object-cover"
+    },
+    {
+      "src": "https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt": "",
+      "className": "absolute inset-0 h-full w-full object-cover"
+    },
+    {
+      "src": "https://images.pexels.com/photos/733162/pexels-photo-733162.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt": "",
+      "className": "absolute inset-0 h-full w-full object-cover"
+    },
+    {
+      "src": "https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "alt": "",
+      "className": "absolute inset-0 h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-canyon.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-ridge.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://jockey.stuudio.xyz/img/mcp/hike-overlook.jpg",
+      "alt": "",
+      "className": "h-full w-full object-cover"
+    },
+    {
+      "src": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FCalcutta%26en-GB%2Cen-US%2Cen%26Google%20Inc.%26Win32%26255%26800%26600%2612%2624%26800%26600%260%26na%261&eci=3&event=%7B%7D&event_id=d0c820d4-f8fd-43ed-9731-e9a1e02e0ed7&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=12a2d22a-9f75-40a1-83a5-74e0ee659f90&tw_ch_fvl=Not-A.Brand%2F99.0.0.0%2CGoogle%20Chrome%2F157.0.8103.51%2CChromium%2F157.0.8103.51&tw_ch_pv=19.0.0&tw_document_href=https%3A%2F%2Fjockey.stuudio.xyz%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1794572866909-465661685&tw_session_start=1&twpid=tw.1794572866909.328794570268881911&txn_id=prl8i&type=javascript&version=2.4.12",
+      "alt": "",
+      "className": ""
+    },
+    {
+      "src": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FCalcutta%26en-GB%2Cen-US%2Cen%26Google%20Inc.%26Win32%26255%26800%26600%2612%2624%26800%26600%260%26na%261&eci=3&event=%7B%7D&event_id=d0c820d4-f8fd-43ed-9731-e9a1e02e0ed7&integration=gtm&p_id=Twitter&p_user_id=0&pl_id=12a2d22a-9f75-40a1-83a5-74e0ee659f90&tw_ch_fvl=Not-A.Brand%2F99.0.0.0%2CGoogle%20Chrome%2F157.0.8103.51%2CChromium%2F157.0.8103.51&tw_ch_pv=19.0.0&tw_document_href=https%3A%2F%2Fjockey.stuudio.xyz%2F&tw_engaged_ms=4&tw_iframe_status=0&tw_pid_src=1&tw_session_count=1&tw_session_id=1794572866909-465661685&tw_session_start=1&twpid=tw.1794572866909.328794570268881911&txn_id=prl8i&type=javascript&version=2.4.12",
+      "alt": "",
+      "className": ""
+    }
+  ]
+}

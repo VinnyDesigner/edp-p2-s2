@@ -1,0 +1,914 @@
+<!DOCTYPE html><!--0_D4tbyy5LU_8FcAWXAb0--><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><link rel="stylesheet" href="/_next/static/css/c9ea9b6355867f69.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-3e3201efe76e74c7.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-eb4aecc3ff015961.js" async=""></script><script src="/_next/static/chunks/main-app-5a7c35fe40bc7dd9.js" async=""></script><script src="/_next/static/chunks/675-951f3387f1bcfe92.js" async=""></script><script src="/_next/static/chunks/app/layout-989080e20db1d637.js" async=""></script><script src="/_next/static/chunks/bd904a5c-1ef0d6cda87f035e.js" async=""></script><script src="/_next/static/chunks/b536a0f1-d1b33f1d8aa9bc78.js" async=""></script><script src="/_next/static/chunks/a3cd4a83-8a3c1503f572f3e5.js" async=""></script><script src="/_next/static/chunks/f6211eb1-2c03dc2860b4e393.js" async=""></script><script src="/_next/static/chunks/b79b7286-cc8bad25dded9f3c.js" async=""></script><script src="/_next/static/chunks/285-b27d4396a781a659.js" async=""></script><script src="/_next/static/chunks/403-bc262a4e416da998.js" async=""></script><script src="/_next/static/chunks/800-ca6b49028a8e0d28.js" async=""></script><script src="/_next/static/chunks/778-5ebbedba3105e4ce.js" async=""></script><script src="/_next/static/chunks/app/page-14ad751b86e9d6b1.js" async=""></script><link rel="preload" href="/fonts/205TF-Milling-Triplex1mm.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><link rel="preload" href="/fonts/205TF-Milling-Duplex1mm.woff2" as="font" type="font/woff2" crossorigin="anonymous"/><meta name="theme-color" content="#000000"/><title>Environment Agency - Abu Dhabi | Video Intelligence Platform</title><meta name="description" content="The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview."/><meta name="application-name" content="Jockey"/><link rel="author" href="https://www.twelvelabs.io"/><meta name="author" content="TwelveLabs"/><meta name="keywords" content="video understanding,video AI,video search,multimodal AI,video agents,Marengo,Pegasus,TwelveLabs,video embeddings,MCP,video analysis API"/><meta name="creator" content="TwelveLabs"/><meta name="publisher" content="TwelveLabs"/><meta name="robots" content="index, follow"/><meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/><meta name="category" content="technology"/><link rel="canonical" href="https://jockey.twelvelabs.io"/><meta property="og:title" content="Jockey by TwelveLabs: The Video Intelligence Agent"/><meta property="og:description" content="The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview."/><meta property="og:url" content="https://jockey.twelvelabs.io"/><meta property="og:site_name" content="Jockey"/><meta property="og:locale" content="en_US"/><meta property="og:image:type" content="image/png"/><meta property="og:image:width" content="4824"/><meta property="og:image:height" content="2520"/><meta property="og:image:alt" content="Jockey — the agent layer for your video corpus"/><meta property="og:image" content="https://jockey.twelvelabs.io/opengraph-image.png?ec4c28927031908d"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@twelve_labs"/><meta name="twitter:creator" content="@twelve_labs"/><meta name="twitter:title" content="Jockey by TwelveLabs: The Video Intelligence Agent"/><meta name="twitter:description" content="The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview."/><meta name="twitter:image:type" content="image/png"/><meta name="twitter:image:width" content="4824"/><meta name="twitter:image:height" content="2520"/><meta name="twitter:image:alt" content="Jockey — the agent layer for your video corpus"/><meta name="twitter:image" content="https://jockey.twelvelabs.io/twitter-image.png?ec4c28927031908d"/><link rel="icon" type="image/png" href="/icon.png" /><style>
+@font-face {
+  font-family: 'Milling';
+  src: url('/fonts/205TF-Milling-Duplex1mm.woff2') format('woff2'),
+       url('/fonts/205TF-Milling-Duplex1mm.otf') format('opentype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Milling Triplex';
+  src: url('/fonts/205TF-Milling-Triplex1mm.woff2') format('woff2'),
+       url('/fonts/205TF-Milling-Triplex1mm.otf') format('opentype');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Book.woff2') format('woff2');
+  font-weight: 450; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-SemiBold.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://jockey.twelvelabs.io/#organization","name":"TwelveLabs","url":"https://www.twelvelabs.io","logo":"https://jockey.twelvelabs.io/icon.svg","sameAs":["https://www.linkedin.com/company/twelvelabs/","https://www.instagram.com/twelvelabs.io/","https://www.youtube.com/@Twelve_Labs","https://x.com/twelve_labs"]},{"@type":"WebSite","@id":"https://jockey.twelvelabs.io/#website","url":"https://jockey.twelvelabs.io","name":"Jockey","description":"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.","publisher":{"@id":"https://jockey.twelvelabs.io/#organization"}},{"@type":"SoftwareApplication","name":"Jockey","applicationCategory":"DeveloperApplication","operatingSystem":"Web","url":"https://jockey.twelvelabs.io","description":"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.","publisher":{"@id":"https://jockey.twelvelabs.io/#organization"}}]}</script><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script>
+<style id="custom-ead-styles">
+/* Button Gradient (Blue -> Teal -> Green) */
+:root {
+  --btn-grad-start: #004c84;
+  --btn-grad-mid: #015e68;
+  --btn-grad-end: #00734d;
+  --btn-gradient: linear-gradient(135deg, #004c84 0%, #015e68 48%, #00734d 100%);
+  --btn-gradient-hover: linear-gradient(135deg, #005a9c 0%, #01737f 48%, #008d5e 100%);
+  --btn-gradient-active: linear-gradient(135deg, #003e6d 0%, #014c54 48%, #005e3f 100%);
+  --btn-glow: 0 4px 18px -2px rgba(0, 115, 77, 0.45), 0 2px 8px -2px rgba(0, 76, 132, 0.4);
+  --btn-glow-hover: 0 6px 24px 0 rgba(0, 115, 77, 0.6), 0 3px 12px 0 rgba(0, 76, 132, 0.5);
+}
+
+/* All CTA buttons */
+a.h-\[44px\].rounded-\[14px\],
+button.h-\[44px\].rounded-\[14px\],
+a.rounded-\[14px\]:not(.absolute):not(.flex-col):not(.underline),
+button.rounded-\[14px\]:not(.absolute):not([aria-label*="feature"]):not([role="tab"]):not([aria-expanded]):not(.size-\[48px\]) {
+  background: var(--btn-gradient) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: var(--btn-glow) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+a.h-\[44px\].rounded-\[14px\]:hover,
+button.h-\[44px\].rounded-\[14px\]:hover,
+a.rounded-\[14px\]:not(.absolute):not(.flex-col):not(.underline):hover,
+button.rounded-\[14px\]:not(.absolute):not([aria-label*="feature"]):not([role="tab"]):not([aria-expanded]):not(.size-\[48px\]):hover {
+  background: var(--btn-gradient-hover) !important;
+  box-shadow: var(--btn-glow-hover) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) scale(1.02);
+}
+
+a.h-\[44px\].rounded-\[14px\]:active,
+button.h-\[44px\].rounded-\[14px\]:active,
+a.rounded-\[14px\]:not(.absolute):not(.flex-col):not(.underline):active,
+button.rounded-\[14px\]:active {
+  background: var(--btn-gradient-active) !important;
+  transform: translateY(0px) scale(0.98);
+}
+
+a.h-\[44px\].rounded-\[14px\] svg,
+button.h-\[44px\].rounded-\[14px\] svg,
+a.rounded-\[14px\]:not(.absolute):not(.flex-col):not(.underline) svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Chat/prompt send arrow button */
+button[aria-label="Send"],
+button.cursor-pointer:has(> svg path[d*="M10 16V4"]) {
+  background: var(--btn-gradient) !important;
+  box-shadow: var(--btn-glow) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.2s ease !important;
+}
+button.cursor-pointer:has(> svg path[d*="M10 16V4"]) > div:first-child {
+  background: transparent !important;
+}
+button[aria-label="Send"]:hover,
+button.cursor-pointer:has(> svg path[d*="M10 16V4"]):hover {
+  background: var(--btn-gradient-hover) !important;
+  box-shadow: var(--btn-glow-hover) !important;
+  transform: scale(1.06);
+}
+
+/* Logo Sizing */
+.ead-header-logo {
+  height: 36px !important;
+  max-height: 36px !important;
+  width: auto !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+}
+.ead-footer-logo {
+  height: 28px !important;
+  max-height: 28px !important;
+  width: auto !important;
+  max-width: 180px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+</style>
+
+
+<style id="ead-clean-logo">
+
+/* ========================================================= */
+/* EAD Brand Logo Replacement (Header & Footer)             */
+/* ========================================================= */
+a[href="#top"] > svg,
+header a[href="#top"] > svg,
+.fixed.inset-x-0.top-0 a[href="#top"] > svg,
+a[href="#top"] > span,
+header a[href="#top"] > span,
+.fixed.inset-x-0.top-0 a[href="#top"] > span {
+  display: none !important;
+}
+
+a[href="#top"],
+header a[href="#top"],
+.fixed.inset-x-0.top-0 a[href="#top"] {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 48px !important;
+  text-decoration: none !important;
+}
+
+a[href="#top"]::before,
+header a[href="#top"]::before,
+.fixed.inset-x-0.top-0 a[href="#top"]::before {
+  content: '' !important;
+  display: block !important;
+  height: 44px !important;
+  width: 160px !important;
+  background-image: url('/logo_ead_dark.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  transition: opacity 0.3s ease !important;
+}
+
+@media (max-width: 640px) {
+  a[href="#top"]::before,
+  header a[href="#top"]::before,
+  .fixed.inset-x-0.top-0 a[href="#top"]::before {
+    height: 36px !important;
+    width: 130px !important;
+  }
+}
+
+/* Light theme for header logo */
+:root[data-nav="light"] a[href="#top"]::before,
+.light a[href="#top"]::before,
+[data-nav="light"] a[href="#top"]::before,
+.fixed[style*="background-color: rgb(255, 255, 255)"] a[href="#top"]::before,
+.fixed[style*="background-color: #ffffff"] a[href="#top"]::before {
+  background-image: url('/logo_ead_light.png') !important;
+}
+
+/* Footer Brand Replacement */
+footer svg:has(+ span.sr-only),
+footer svg[viewBox="0 0 34 24"] {
+  display: none !important;
+}
+
+footer .flex.items-center:has(> span.sr-only)::before {
+  content: '' !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  height: 32px !important;
+  width: 125px !important;
+  background-image: url('/logo_ead_dark.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  margin-right: 14px !important;
+}
+
+</style>
+<style id="remove-claude-floating-card">
+/* ========================================================= */
+/* Hide ONLY bottom-right floating Claude Connectors widget  */
+/* ========================================================= */
+div.pointer-events-none.absolute.bottom-6.right-6.z-\[30\],
+div.pointer-events-none.absolute.bottom-6.right-6,
+div.absolute.inset-x-0.bottom-0.z-\[26\].min-\[64\.0625rem\]\:hidden,
+.bottom-6.right-6.z-\[30\] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+}
+
+/* Ensure Central Search Box & Popular Searches are always visible on Hero */
+.edp-search-container,
+div.pointer-events-none.absolute.z-\[15\],
+div.pointer-events-none.absolute.min-\[64\.0625rem\]\:z-\[37\] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.edp-search-wrapper,
+div.pointer-events-none.relative.w-full:has(.edp-search-box),
+div.pointer-events-none.relative.w-full:has(.max-w-\[620px\]) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.edp-search-box,
+div.max-w-\[620px\] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.edp-popular-searches {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Remove Watch demo button completely */
+button:has(> span:not(:empty)),
+.watch-demo-btn {
+  /* targeted specifically below */
+}
+</style>
+<style id="edp-search-visibility-polish">
+/* Search Box & Popular Searches Visibility & Polish */
+.edp-search-container,
+div.pointer-events-none.absolute.z-\[15\],
+div.pointer-events-none.absolute.min-\[64\.0625rem\]\:z-\[37\] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.edp-search-wrapper,
+div.pointer-events-none.relative.w-full:has(.edp-search-box),
+div.pointer-events-none.relative.w-full:has(.max-w-\[620px\]) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.edp-search-box,
+div.max-w-\[620px\] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  border-color: rgba(255, 255, 255, 0.22) !important;
+}
+
+#edp-main-search-input,
+#edp-main-search-input-mobile,
+input[placeholder*="environmental data"] {
+  color: #ffffff !important;
+  font-size: 14px !important;
+}
+
+#edp-main-search-input::placeholder,
+#edp-main-search-input-mobile::placeholder,
+input[placeholder*="environmental data"]::placeholder {
+  color: rgba(255, 255, 255, 0.72) !important;
+  opacity: 1 !important;
+}
+
+.edp-popular-searches {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.edp-chip {
+  cursor: pointer !important;
+}
+.edp-chip:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+</style><style id="edp-single-line-chips">
+/* Strict Single-Line Popular Searches Chips */
+.edp-popular-searches {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: max-content !important;
+  max-width: 98vw !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  gap: 6px !important;
+  padding: 4px 8px !important;
+  margin-top: 10px !important;
+}
+
+.edp-popular-searches::-webkit-scrollbar {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.edp-popular-searches span {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+}
+
+.edp-chip {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 11.5px !important;
+  line-height: 1.2 !important;
+  padding: 3px 8.5px !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+}
+
+.edp-chip:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
+  transform: translateY(-0.5px);
+}
+</style>
+<style id="edp-hide-search-on-scroll">
+/* Hide search option and popular searches in all scenarios past hero */
+body.scrolled-past-hero .edp-search-container,
+body.scrolled-past-hero div.pointer-events-none.absolute.z-\[15\],
+body.scrolled-past-hero div.pointer-events-none.absolute.min-\[64\.0625rem\]\:z-\[37\],
+body.scrolled-past-hero .edp-search-box,
+body.scrolled-past-hero .edp-popular-searches,
+body.scrolled-past-hero .edp-search-wrapper,
+body.scrolled-past-hero #edp-main-search-input,
+body.scrolled-past-hero #edp-main-search-input-mobile {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+</style>
+<style id="edp-global-polish">
+/* === 1. UNIFIED EAD BRAND BUTTON COLORS EVERYWHERE === */
+.edp-ss-all-btn,
+.edp-ss-modal-link,
+.edp-news-all-btn,
+.edp-about-btn,
+.edp-cta-btn-primary {
+  background: var(--btn-gradient, linear-gradient(135deg, #004c84 0%, #015e68 48%, #00734d 100%)) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  box-shadow: var(--btn-glow, 0 4px 18px -2px rgba(0, 115, 77, 0.45), 0 2px 8px -2px rgba(0, 76, 132, 0.4)) !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.edp-ss-all-btn:hover,
+.edp-ss-modal-link:hover,
+.edp-news-all-btn:hover,
+.edp-about-btn:hover,
+.edp-cta-btn-primary:hover {
+  background: var(--btn-gradient-hover, linear-gradient(135deg, #005a9c 0%, #01737f 48%, #008d5e 100%)) !important;
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.42) !important;
+  box-shadow: var(--btn-glow-hover, 0 8px 28px 0 rgba(0, 115, 77, 0.65), 0 4px 14px 0 rgba(0, 76, 132, 0.55)) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+.edp-cta-btn-secondary {
+  background: linear-gradient(135deg, rgba(0, 76, 132, 0.42) 0%, rgba(1, 94, 104, 0.42) 50%, rgba(0, 115, 77, 0.42) 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(0, 230, 153, 0.46) !important;
+  box-shadow: 0 4px 18px rgba(0, 76, 132, 0.34) !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.edp-cta-btn-secondary:hover {
+  background: var(--btn-gradient-hover, linear-gradient(135deg, #005a9c 0%, #01737f 48%, #008d5e 100%)) !important;
+  border-color: rgba(255, 255, 255, 0.42) !important;
+  box-shadow: var(--btn-glow-hover, 0 8px 28px 0 rgba(0, 115, 77, 0.65), 0 4px 14px 0 rgba(0, 76, 132, 0.55)) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+}
+.edp-ss-btn {
+  background: linear-gradient(135deg, rgba(0, 76, 132, 0.58) 0%, rgba(1, 94, 104, 0.58) 50%, rgba(0, 115, 77, 0.58) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.26) !important;
+  border-radius: 10px !important;
+  color: #ffffff !important;
+}
+.edp-ss-btn:hover {
+  background: var(--btn-gradient-hover, linear-gradient(135deg, #005a9c 0%, #01737f 48%, #008d5e 100%)) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  box-shadow: var(--btn-glow) !important;
+  transform: scale(1.06);
+}
+
+/* === 2. VISIBLY RICH MULTI-TONE OCEAN BLUE -> TEAL -> EMERALD BACKGROUND GRADIENTS === */
+@keyframes edpAuroraDrift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#use-cases {
+  background:
+    radial-gradient(ellipse 64% 52% at 86% 22%, rgba(0, 110, 195, 0.36) 0%, transparent 66%),
+    radial-gradient(ellipse 58% 48% at 14% 82%, rgba(0, 175, 120, 0.28) 0%, transparent 68%),
+    linear-gradient(160deg, #020810 0%, #051822 48%, #031515 100%) !important;
+}
+#edp-shipped-flow {
+  background:
+    radial-gradient(ellipse 72% 56% at 50% 54%, rgba(1, 135, 148, 0.36) 0%, rgba(0, 92, 160, 0.22) 44%, transparent 76%),
+    radial-gradient(ellipse 48% 42% at 12% 16%, rgba(0, 190, 130, 0.26) 0%, transparent 68%),
+    radial-gradient(ellipse 44% 40% at 88% 84%, rgba(0, 108, 190, 0.28) 0%, transparent 68%),
+    linear-gradient(180deg, #031116 0%, #061d24 50%, #031214 100%) !important;
+}
+#environmental-glance {
+  background:
+    radial-gradient(ellipse 70% 54% at 50% 56%, rgba(0, 180, 125, 0.32) 0%, rgba(0, 100, 170, 0.22) 46%, transparent 78%),
+    radial-gradient(ellipse 46% 42% at 84% 18%, rgba(0, 118, 200, 0.26) 0%, transparent 68%),
+    linear-gradient(180deg, #031214 0%, #041e1b 50%, #031016 100%) !important;
+}
+#whats-new {
+  background:
+    radial-gradient(ellipse 62% 52% at 18% 22%, rgba(0, 112, 196, 0.34) 0%, transparent 66%),
+    radial-gradient(ellipse 62% 52% at 84% 78%, rgba(0, 182, 126, 0.30) 0%, transparent 68%),
+    linear-gradient(165deg, #031016 0%, #051a24 52%, #031615 100%) !important;
+}
+#about-platform {
+  background:
+    radial-gradient(ellipse 58% 64% at 76% 50%, rgba(0, 185, 128, 0.34) 0%, rgba(0, 102, 175, 0.22) 46%, transparent 74%),
+    radial-gradient(ellipse 46% 48% at 14% 28%, rgba(0, 114, 196, 0.28) 0%, transparent 68%),
+    linear-gradient(180deg, #031615 0%, #051c20 50%, #020e14 100%) !important;
+}
+#faq {
+  background:
+    radial-gradient(ellipse 60% 54% at 16% 36%, rgba(0, 112, 196, 0.30) 0%, transparent 68%),
+    radial-gradient(ellipse 56% 50% at 84% 74%, rgba(0, 175, 120, 0.26) 0%, transparent 68%),
+    linear-gradient(180deg, #020e14 0%, #04171c 55%, #02090d 100%) !important;
+}
+footer[data-nav="dark"] {
+  background:
+    radial-gradient(ellipse 68% 58% at 50% 0%, rgba(0, 150, 130, 0.28) 0%, transparent 68%),
+    linear-gradient(180deg, #041716 0%, #02090c 100%) !important;
+}
+
+/* === 3. GLOBAL CURSOR-FOLLOW GLOW + SCROLL PROGRESS + CARD HOVER & SCROLL ANIMATIONS === */
+#edp-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: 9998;
+  pointer-events: none;
+  background: linear-gradient(90deg, #0077cc 0%, #00b4b4 50%, #00e699 100%);
+  box-shadow: 0 0 16px rgba(0, 230, 153, 0.85);
+  transition: width 0.08s linear;
+}
+#edp-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 620px;
+  height: 620px;
+  margin-left: -310px;
+  margin-top: -310px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 35;
+  opacity: 0;
+  background: radial-gradient(circle, rgba(0, 230, 153, 0.16) 0%, rgba(0, 130, 210, 0.12) 38%, transparent 70%);
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+  transition: opacity 0.4s ease;
+}
+.edp-kpi-card,
+.edp-news-card,
+.edp-about-visual {
+  --mx: 50%;
+  --my: 50%;
+  transform-style: preserve-3d;
+  will-change: transform;
+  background-color: rgba(5, 16, 20, 0.72) !important;
+  backdrop-filter: blur(12px);
+}
+.edp-kpi-card::after,
+.edp-news-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(0, 230, 153, 0.26), rgba(0, 130, 210, 0.16) 44%, transparent 72%);
+  transition: opacity 0.22s ease;
+  z-index: 1;
+}
+.edp-kpi-card:hover::after,
+.edp-news-card:hover::after {
+  opacity: 1;
+}
+#faq button {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), padding-left 0.25s ease, background-color 0.25s ease;
+  border-radius: 12px;
+}
+#faq button:hover {
+  padding-left: 12px;
+  background: linear-gradient(90deg, rgba(0, 230, 153, 0.08) 0%, transparent 100%);
+}
+.edp-ss-card {
+  transition: filter 0.25s ease;
+}
+.edp-ss-card:hover .edp-ss-frame {
+  box-shadow: 0 0 36px rgba(0, 230, 153, 0.25), 0 0 18px rgba(0, 110, 195, 0.22);
+}
+.edp-reveal-init {
+  opacity: 0;
+  transform: translateY(42px) scale(0.97);
+  filter: blur(3px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.edp-reveal-in {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  filter: blur(0) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .edp-reveal-init { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+  #edp-cursor-glow { display: none !important; }
+}
+</style></head><body><div hidden=""><!--$--><!--/$--></div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTFL3HZG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><main><div class="relative w-full" style="height:950vh"><div class="relative z-[60]" style="opacity:0;transition:opacity 700ms ease-out;pointer-events:none"><div class="fixed inset-x-0 top-0 z-[60]  " style="padding-top:env(safe-area-inset-top, 0px);opacity:0;transition:opacity 1000ms ease-out, background-color 500ms ease, color 500ms ease, border-color 500ms ease"><a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-fg focus:text-page focus:px-4 focus:py-2 focus:rounded-lg pointer-events-auto">Skip to content</a><div class="relative z-10 w-full max-w-shell mx-auto px-6 py-4 sm:px-6 md:px-10"><div class="flex justify-between items-center"><div class="flex items-center gap-1.5 sm:gap-2 md:gap-3"><a href="#top" class="pointer-events-auto flex items-center gap-2 cursor-pointer transition-opacity duration-300 hover:opacity-90">
+    <img src="/logo_ead_dark.png" alt="Environment Agency - Abu Dhabi" class="ead-logo-dark ead-header-logo" style="height:36px;max-height:36px;width:auto;object-fit:contain;" />
+    <img src="/logo_ead_light.png" alt="Environment Agency - Abu Dhabi" class="ead-logo-light ead-header-logo" style="height:36px;max-height:36px;width:auto;object-fit:contain;display:none;" />
+  </a></div><div class="flex items-center gap-4 sm:gap-5 md:gap-6"><a href="#use-cases" class="pointer-events-auto text-body transition-colors duration-150 ease hidden lg:block text-fg/70 hover:text-fg whitespace-nowrap">Environmental Themes</a><a href="#edp-shipped-flow" class="pointer-events-auto text-body transition-colors duration-150 ease hidden lg:block text-fg/70 hover:text-fg whitespace-nowrap">Smart Applications</a><a href="#environmental-glance" class="pointer-events-auto text-body transition-colors duration-150 ease hidden lg:block text-fg/70 hover:text-fg whitespace-nowrap">Insights</a><a href="#about-platform" class="pointer-events-auto text-body transition-colors duration-150 ease hidden lg:block text-fg/70 hover:text-fg whitespace-nowrap">About</a><div role="group" aria-label="Language switcher" class="pointer-events-auto" style="display:inline-flex;align-items:center;gap:2px;padding:3px;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(10px)"><button type="button" aria-pressed="true" style="height:34px;padding:0 12px;border-radius:9px;font-size:13px;font-weight:500;border:none;cursor:pointer;line-height:1;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;transition:all 0.18s ease;background:linear-gradient(135deg, #004c84 0%, #015e68 48%, #00734d 100%);color:#ffffff;box-shadow:0 2px 8px rgba(0,115,77,0.45)">EN</button><button type="button" aria-pressed="false" style="height:34px;padding:0 12px;border-radius:9px;font-size:13px;font-weight:500;border:none;cursor:pointer;line-height:1;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;transition:all 0.18s ease;background:transparent;color:rgba(255,255,255,0.7);box-shadow:none">العربية</button></div><div class="pointer-events-auto"><a href="#login" class="inline-flex items-center justify-center gap-[8px] w-fit text-[16px] font-normal leading-[24px] tracking-[0em] cursor-pointer select-none whitespace-nowrap transition-[background-color,transform,border-color] duration-150 ease-out active:scale-[0.97] h-[44px] px-[16px] rounded-[14px] bg-fg text-page hover:bg-fg/90 active:bg-fg/85 " style="text-decoration:none"><span>Login</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div></div></div></div></div></div><div class="sticky top-0 w-full overflow-hidden" style="height:var(--app-height, 100vh)"><section id="use-cases" data-nav="dark" class="relative w-full overflow-hidden" style="height:var(--app-height, 100vh);background-color:#000000;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div data-nav-anchor="use-cases" aria-hidden="true" class="h-0 w-0"></div><style>
+        @keyframes hv6EdgeA { 0%,100%{opacity:1} 50%{opacity:.2} }
+        @keyframes hv6EdgeB { 0%,100%{opacity:.2} 50%{opacity:1} }
+      </style><div class="relative flex h-full w-full flex-col" style="gap:0;transform:translateY(0px)"><div class="relative min-h-0 flex-1 overflow-hidden ring-1 ring-white/10" style="border-radius:0"><div aria-hidden="true" class="pointer-events-none absolute inset-0 hidden items-stretch opacity-0 min-[64.0625rem]:flex"><div class="mx-auto grid w-full max-w-shell grid-cols-[3fr_4fr_3fr] px-4 sm:px-6 min-[64.0625rem]:px-10"><div></div><div></div><div></div></div></div><div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 z-[20] hidden min-[64.0625rem]:block" style="height:232px;opacity:1;background:linear-gradient(to top, rgb(0,0,0) 0%, rgb(0,0,0) 31.0%, rgba(0,0,0,0.72) 52.6%, rgba(0,0,0,0.3) 76.3%, rgba(0,0,0,0) 100%)"></div><div class="pointer-events-none absolute bottom-6 right-6 z-[30] hidden flex-col items-end gap-3 min-[64.0625rem]:flex" style="opacity:0;transform:translateY(12.00px) scale(0.8500);transform-origin:bottom right;visibility:hidden"><div class="group pointer-events-auto relative flex cursor-pointer flex-col items-start gap-[12px] p-[8px] " style="width:440px;border-radius:32.00px;border:1px solid transparent;background:linear-gradient(#000, #000) padding-box, linear-gradient(to bottom, rgba(0,153,255,0.85), rgba(0,230,153,0.7) 45%, #000000) border-box;box-shadow:0 0 40px -18px rgba(0,153,255,0.32), 0 0 72px -16px rgba(0,230,153,0.26)"><div aria-hidden="false" class="grid w-full overflow-hidden" style="grid-template-rows:minmax(0, 1.0000fr);opacity:1;margin-bottom:0.00px"><div class="relative flex w-full min-h-0 flex-col items-center overflow-hidden rounded-[24px] px-[48px] py-[36px]" style="border:1px solid rgba(255,255,255,0.14);background:linear-gradient(to bottom, rgba(0,153,255,0.2), rgba(0,230,153,0.12) 40%, #000000 82%)"><div class="relative flex flex-col items-start shrink-0" style="width:228px;max-width:100%;height:57.97px;padding:12.609px;border-radius:12.609px;margin-bottom:-40px;background:rgba(0,0,0,0.41);border:1px solid rgba(255,255,255,0.11);backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)"></div><div class="relative flex flex-col items-start shrink-0" style="width:261px;max-width:100%;height:57.97px;padding:12.609px;border-radius:12.609px;margin-bottom:-40px;background:rgba(0,0,0,0.41);border:1px solid rgba(255,255,255,0.11);backdrop-filter:blur(50px);-webkit-backdrop-filter:blur(50px)"></div><div class="relative flex flex-col items-start shrink-0" style="width:287px;max-width:100%;padding:12.609px;border-radius:12.609px;margin-bottom:0;background:linear-gradient(#000, #000) padding-box, linear-gradient(to bottom, #0099ff, #00e699 42%, #000000) border-box;border:0.616px solid transparent;filter:drop-shadow(0px 2.035px 4.07px rgba(0,0,0,0.5))"><div class="flex w-full items-center gap-[9.457px]"><div class="flex size-[31.523px] shrink-0 items-center justify-center"><div class="flex size-[28.371px] items-center justify-center rounded-[7.66px] bg-white" style="border:0.788px solid rgba(231,231,231,0.05);filter:drop-shadow(0px 1.576px 1.576px rgba(0,0,0,0.08))"><svg viewBox="0 0 34 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-[12.61px] w-[17.86px] text-black"><rect x="7.18555" y="8.23438" width="10.5335" height="1.42923" rx="0.419349"></rect><rect y="8.23438" width="5.7773" height="1.42923" rx="0.419349"></rect><rect x="20.3379" y="8.23438" width="6.59571" height="1.42923" rx="0.419349"></rect><rect x="21.2832" y="6.1875" width="5.65048" height="1.42923" rx="0.419349"></rect><rect x="27.6777" y="6.1875" width="4.48085" height="1.42923" rx="0.419349"></rect><rect x="25.7676" y="4.09375" width="5.10068" height="1.42923" rx="0.419349"></rect><rect x="27.3848" y="2.04688" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="12.1719" y="18.4766" width="2.59751" height="1.42923" rx="0.419349"></rect><rect x="16.6816" y="18.4766" width="1.70193" height="1.42923" rx="0.419349"></rect><rect x="19.1699" y="18.4766" width="4.58966" height="1.42923" rx="0.419349"></rect><rect x="21.4688" y="16.4258" width="1.90502" height="1.42923" rx="0.419349"></rect><rect x="8.5918" y="18.4766" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="15.5195" y="20.5234" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="14.0547" y="22.5703" width="1.42919" height="1.42923" rx="0.419349"></rect><rect x="19.7246" width="1.86002" height="1.42923" rx="0.419349"></rect><rect x="9.14453" y="6.1875" width="4.75784" height="1.42923" rx="0.419349"></rect><rect x="17.9668" y="2.04688" width="2.8901" height="1.42923" rx="0.419349"></rect><rect x="16.1934" y="4.09375" width="4.66378" height="1.42923" rx="0.419349"></rect><rect x="30.7012" y="8.23438" width="2.72147" height="1.42923" rx="0.419349"></rect><rect x="5.01367" y="10.2852" width="13.4447" height="1.42923" rx="0.419349"></rect><rect x="17.2188" y="14.3789" width="5.25254" height="1.42923" rx="0.419349"></rect><rect x="7.18555" y="12.332" width="17.0809" height="1.42923" rx="0.419349"></rect><rect x="4.57031" y="14.3789" width="6.35029" height="1.42923" rx="0.419349"></rect><rect x="10.3691" y="16.4258" width="2.08303" height="1.42923" rx="0.419349"></rect><rect x="17.7188" y="16.4258" width="2.24259" height="1.42923" rx="0.419349"></rect><rect x="6.52344" y="16.4258" width="2.10538" height="1.42923" rx="0.419349"></rect><rect x="20.3379" y="10.2852" width="5.43001" height="1.42923" rx="0.419349"></rect><rect x="21.5996" y="4.07812" width="1.50077" height="1.42923" rx="0.419349"></rect></svg></div></div><div class="flex min-w-0 flex-1 items-center gap-[4.728px]"><div class="flex h-[31.523px] min-w-0 flex-1 flex-col items-start justify-center overflow-hidden"><p class="text-[16px] leading-[15.762px] text-white">Jockey by TwelveLabs</p></div><p class="shrink-0 whitespace-nowrap" style="background-image:linear-gradient(90deg, #0099ff 0%, #00e699 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:11.821px;line-height:23.642px;letter-spacing:0.1385px">New</p></div></div></div></div></div><div class="relative flex w-full flex-col items-start pb-[12px] pl-[12px] pr-[40px] pt-[12px]"><p class="text-[16px] leading-[1.2] text-white">Available in the Claude Connectors Directory</p><span aria-hidden="true" class="absolute bottom-[12px] right-[12px] flex text-white transition-transform duration-150 ease-out group-hover:translate-x-[2px] group-hover:-translate-y-[2px]"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div aria-hidden="true" class="pointer-events-none absolute inset-0 rounded-[inherit]" style="box-shadow:inset 0px 0px 20.3px 0px rgba(255,255,255,0.12)"></div><a href="https://claude.ai/directory/jockey" aria-label="Open Jockey in the Claude Connectors Directory" class="absolute inset-0 z-[1] rounded-[inherit]"></a></div></div><div class="absolute inset-x-0" style="top:0;bottom:72px;opacity:1"><div class="absolute inset-0 h-full w-full "></div></div></div><div class="order-first min-h-0 min-[64.0625rem]:absolute min-[64.0625rem]:inset-x-0 min-[64.0625rem]:bottom-0 min-[64.0625rem]:z-[25] min-[64.0625rem]:order-none" style="flex:0 0 auto;padding-block:0;max-height:0vh;overflow:hidden;opacity:0;transform:translateY(24.00px)"><div class="mx-auto flex w-full max-w-shell flex-col items-start justify-center gap-6 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:px-3 min-[48rem]:px-7 min-[64.0625rem]:flex-col min-[64.0625rem]:items-start min-[64.0625rem]:justify-start min-[64.0625rem]:gap-6 min-[64.0625rem]:px-4"><div><a href="#" class="mb-4 inline-flex min-[64.0625rem]:hidden"><span class="inline-flex items-center gap-[4px] w-fit h-[24px] rounded-[7px] text-[12px] font-normal uppercase tracking-[0.02em] leading-[166.7%] whitespace-nowrap select-none transition-colors duration-500  " style="padding:2.5px 6px 1px;border-width:1px;border-style:solid;border-color:transparent;background-image:linear-gradient(#000000, #000000), linear-gradient(90deg, #0099ff 0%, #00e699 100%);background-origin:border-box;background-clip:padding-box, border-box"><span style="background-image:linear-gradient(90deg, #0099ff 0%, #00e699 100%);-webkit-background-clip:text;background-clip:text;color:transparent">ENVIRONMENTAL DATA PLATFORM</span></span></a><h1 class="font-semibold leading-[1.05] tracking-[-0.03em] sm:text-balance text-white" style="font-family:var(--font-display);font-size:clamp(2.4rem, 5vw, 4.4rem);text-shadow:0 2px 28px rgba(0,0,0,0.55)">One Environment.<br/> <!-- -->Endless Insights.</h1><p class="mt-4 max-w-[560px] text-body text-white/70 font-normal leading-relaxed">Explore Abu Dhabi&#x27;s environment through a connected world of data, insights, and interactive applications.</p></div></div></div><div class="absolute inset-x-0 bottom-0 z-[26] min-[64.0625rem]:hidden" style="opacity:0;pointer-events:none"><div class="group pointer-events-auto relative flex w-full cursor-pointer items-center gap-[10px] rounded-[14px] py-[9px] pl-[10px] pr-[34px] " style="border:1px solid transparent;background:linear-gradient(#000, #000) padding-box, linear-gradient(90deg, #0099ff, #00e699) border-box;box-shadow:0 0 26px -18px rgba(0,153,255,0.4), 0 0 44px -16px rgba(0,230,153,0.3)"><div class="flex size-[22px] shrink-0 items-center justify-center rounded-[6px] bg-white" style="border:0.6px solid rgba(231,231,231,0.05)"><svg viewBox="0 0 34 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-[9.8px] w-[13.9px] text-black"><rect x="7.18555" y="8.23438" width="10.5335" height="1.42923" rx="0.419349"></rect><rect y="8.23438" width="5.7773" height="1.42923" rx="0.419349"></rect><rect x="20.3379" y="8.23438" width="6.59571" height="1.42923" rx="0.419349"></rect><rect x="21.2832" y="6.1875" width="5.65048" height="1.42923" rx="0.419349"></rect><rect x="27.6777" y="6.1875" width="4.48085" height="1.42923" rx="0.419349"></rect><rect x="25.7676" y="4.09375" width="5.10068" height="1.42923" rx="0.419349"></rect><rect x="27.3848" y="2.04688" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="12.1719" y="18.4766" width="2.59751" height="1.42923" rx="0.419349"></rect><rect x="16.6816" y="18.4766" width="1.70193" height="1.42923" rx="0.419349"></rect><rect x="19.1699" y="18.4766" width="4.58966" height="1.42923" rx="0.419349"></rect><rect x="21.4688" y="16.4258" width="1.90502" height="1.42923" rx="0.419349"></rect><rect x="8.5918" y="18.4766" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="15.5195" y="20.5234" width="1.50077" height="1.42923" rx="0.419349"></rect><rect x="14.0547" y="22.5703" width="1.42919" height="1.42923" rx="0.419349"></rect><rect x="19.7246" width="1.86002" height="1.42923" rx="0.419349"></rect><rect x="9.14453" y="6.1875" width="4.75784" height="1.42923" rx="0.419349"></rect><rect x="17.9668" y="2.04688" width="2.8901" height="1.42923" rx="0.419349"></rect><rect x="16.1934" y="4.09375" width="4.66378" height="1.42923" rx="0.419349"></rect><rect x="30.7012" y="8.23438" width="2.72147" height="1.42923" rx="0.419349"></rect><rect x="5.01367" y="10.2852" width="13.4447" height="1.42923" rx="0.419349"></rect><rect x="17.2188" y="14.3789" width="5.25254" height="1.42923" rx="0.419349"></rect><rect x="7.18555" y="12.332" width="17.0809" height="1.42923" rx="0.419349"></rect><rect x="4.57031" y="14.3789" width="6.35029" height="1.42923" rx="0.419349"></rect><rect x="10.3691" y="16.4258" width="2.08303" height="1.42923" rx="0.419349"></rect><rect x="17.7188" y="16.4258" width="2.24259" height="1.42923" rx="0.419349"></rect><rect x="6.52344" y="16.4258" width="2.10538" height="1.42923" rx="0.419349"></rect><rect x="20.3379" y="10.2852" width="5.43001" height="1.42923" rx="0.419349"></rect><rect x="21.5996" y="4.07812" width="1.50077" height="1.42923" rx="0.419349"></rect></svg></div><p class="min-w-0 flex-1 truncate text-[12px] leading-[1.2] text-white">Available in the Claude Connectors Directory</p><a href="https://claude.ai/directory/jockey" aria-label="Open Jockey in the Claude Connectors Directory" class="absolute inset-0 z-[1] rounded-[inherit]"></a><button type="button" aria-label="Dismiss" class="z-[2] flex size-[24px] shrink-0 items-center justify-center rounded-full text-white/45 transition-colors duration-200 hover:bg-white/10 hover:text-white active:text-white/70 absolute right-[5px] top-1/2 -translate-y-1/2"><svg width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="4" x2="16" y2="16"></line><line x1="16" y1="4" x2="4" y2="16"></line></svg></button></div></div></div><div class="pointer-events-none absolute z-[15] w-[min(92vw,640px)] min-[64.0625rem]:z-[37] min-[64.0625rem]:w-[640px] flex flex-col items-center text-center" style="left:50%;top:42%;transform:translate(-50%, -50%) scale(1);width:640px"><a href="#" class="absolute bottom-full left-1/2 mb-3 hidden min-[64.0625rem]:block" style="opacity:1;transform:translateX(-50%) translateY(0px);pointer-events:auto"><span class="inline-flex items-center gap-[4px] w-fit h-[24px] rounded-[7px] text-[12px] font-normal uppercase tracking-[0.02em] leading-[166.7%] whitespace-nowrap select-none transition-colors duration-500  " style="padding:2.5px 6px 1px;border-width:1px;border-style:solid;border-color:transparent;background-image:linear-gradient(#000000, #000000), linear-gradient(90deg, #0099ff 0%, #00e699 100%);background-origin:border-box;background-clip:padding-box, border-box"><span style="background-image:linear-gradient(90deg, #0099ff 0%, #00e699 100%);-webkit-background-clip:text;background-clip:text;color:transparent">ENVIRONMENTAL DATA PLATFORM</span></span></a><div class="pointer-events-none relative w-full" style="opacity:1;transform:translateY(0px);transition:opacity 620ms ease-out, transform 620ms cubic-bezier(0.22,1,0.36,1)"><div class="relative w-full z-30 pointer-events-none"><style>@keyframes jk-shimmer-slide{0%{background-position:200% 50%}100%{background-position:-200% 50%}}</style><div class="pointer-events-auto"><div class="max-w-[620px] mx-auto px-4"><div class="flex flex-col gap-[8px] sm:gap-[12px] items-start justify-end px-[12px] sm:px-[16.5px] py-[10px] sm:py-[12.5px] relative rounded-[16px] sm:rounded-[24px] shrink-0 w-full border border-solid cursor-text" style="border-color:var(--border, #171717);box-shadow:var(--shadow-chat, 0px 2px 2px rgba(0,0,0,0.01), 0px 2px 6px rgba(0,0,0,0.03))"><div class="absolute inset-0 pointer-events-none rounded-[16px] sm:rounded-[24px]" style="background:var(--primary-background, #000000)"></div><div class="relative shrink-0 w-full"><div class="sm:hidden relative w-full" style="height:32px;transition:height 320ms cubic-bezier(0.4, 0, 0.2, 1)"><div aria-hidden="true" class="absolute inset-x-0 top-0 h-0 overflow-hidden invisible pointer-events-none"><div class="flex gap-[8px] items-center"><span class="shrink-0" style="width:24px;height:24px"></span><div class="flex-1 min-w-0 overflow-hidden whitespace-nowrap text-[12px] leading-[16px]"></div><span class="shrink-0" style="width:32px;height:32px"></span></div></div><button class="absolute left-0 flex items-center justify-center p-[6px] rounded-[8px] cursor-pointer transition-colors" style="top:4px;transition:top 320ms cubic-bezier(0.4, 0, 0.2, 1)"><svg class="size-[12px]" style="color:var(--secondary-foreground, #a1a1a1)" viewBox="0 0 16 16" fill="none"><path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM10.5 10.5 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><div class="absolute flex items-center min-w-0" style="top:0;bottom:0;left:32px;right:40px;transition:left 320ms cubic-bezier(0.4, 0, 0.2, 1), right 320ms cubic-bezier(0.4, 0, 0.2, 1), bottom 320ms cubic-bezier(0.4, 0, 0.2, 1)"><input id="edp-main-search-input-mobile" type="text" class="w-full bg-transparent text-[12px] leading-[16px] text-white placeholder:text-white/70 outline-none border-none font-normal cursor-text" placeholder="Search environmental data, applications, themes....." autocomplete="off" /></div><div class="absolute top-0 right-0 flex gap-[8px] items-center"><div class="flex items-start shrink-0"><button class="flex items-center justify-center relative rounded-[8px] sm:rounded-[12px] shrink-0 size-[32px] sm:size-[34px] cursor-pointer transition-colors" style="box-shadow:var(--shadow-chat, 0px 2px 2px rgba(0,0,0,0.01), 0px 2px 6px rgba(0,0,0,0.03))"><div class="absolute inset-0 pointer-events-none rounded-[8px] sm:rounded-[12px]" style="background:var(--secondary-background, #262626)"></div><svg class="size-[14px] sm:size-[20px] relative z-[1]" style="color:var(--primary-foreground, #fafafa)" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M10 4l5 5M10 4 5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="absolute inset-0 pointer-events-none rounded-[inherit]" style="box-shadow:inset 0px 1px 0px rgba(255,255,255,0.24), inset 0px 1px 4px rgba(255,255,255,0.04), inset 0px 0px 24px rgba(255,255,255,0.06), inset 0px 4px 12px rgba(255,255,255,0.03)"></div></button></div></div></div><div class="hidden sm:flex gap-[12px] items-center relative w-full"><div aria-hidden="true" class="absolute inset-x-0 top-0 h-0 overflow-hidden invisible pointer-events-none"><div class="flex gap-[12px] items-center"><span class="shrink-0" style="width:28px;height:28px"></span><div class="flex-1 min-w-0 overflow-hidden whitespace-nowrap text-[14px] leading-[20px]"></div><span class="shrink-0" style="width:34px;height:34px"></span></div></div><div class="flex gap-[10px] items-center shrink-0 relative"><button class="flex items-center justify-center p-[6px] rounded-[8px] shrink-0 cursor-pointer transition-colors"><svg class="size-[16px]" style="color:var(--secondary-foreground, #a1a1a1)" viewBox="0 0 16 16" fill="none"><path d="M11.5 7a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM10.5 10.5 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div><div class="flex flex-1 gap-[10px] items-center min-w-0 py-[8px] relative"><input id="edp-main-search-input" type="text" class="w-full bg-transparent text-[14px] leading-[20px] text-white placeholder:text-white/70 outline-none border-none font-normal cursor-text" placeholder="Search environmental data, applications, themes....." autocomplete="off" /></div><div class="flex gap-[8px] items-center shrink-0"><div class="flex items-start shrink-0"><button class="flex items-center justify-center relative rounded-[8px] sm:rounded-[12px] shrink-0 size-[32px] sm:size-[34px] cursor-pointer transition-colors" style="box-shadow:var(--shadow-chat, 0px 2px 2px rgba(0,0,0,0.01), 0px 2px 6px rgba(0,0,0,0.03))"><div class="absolute inset-0 pointer-events-none rounded-[8px] sm:rounded-[12px]" style="background:var(--secondary-background, #262626)"></div><svg class="size-[14px] sm:size-[20px] relative z-[1]" style="color:var(--primary-foreground, #fafafa)" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M10 4l5 5M10 4 5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><div class="absolute inset-0 pointer-events-none rounded-[inherit]" style="box-shadow:inset 0px 1px 0px rgba(255,255,255,0.24), inset 0px 1px 4px rgba(255,255,255,0.04), inset 0px 0px 24px rgba(255,255,255,0.06), inset 0px 4px 12px rgba(255,255,255,0.03)"></div></button></div></div></div></div><div class="absolute inset-[-0.5px] pointer-events-none rounded-[inherit]" style="box-shadow:inset 0px 1px 0px rgba(255,255,255,0.24), inset 0px 1px 4px rgba(255,255,255,0.04), inset 0px 0px 24px rgba(255,255,255,0.06), inset 0px 4px 12px rgba(255,255,255,0.03)"></div></div></div></div></div>
+<div class="edp-popular-searches mt-3 flex flex-nowrap whitespace-nowrap items-center justify-center gap-1.5 text-xs pointer-events-auto select-none px-2 z-40 relative max-w-full">
+  <span class="text-white/45 font-medium text-[13px] mr-1">Popular Searches:</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Air Quality</button>
+  <span class="text-white/20">|</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Marine</button>
+  <span class="text-white/20">|</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Biodiversity</button>
+  <span class="text-white/20">|</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Water</button>
+  <span class="text-white/20">|</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Climate</button>
+  <span class="text-white/20">|</span>
+  <button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/75 hover:text-white bg-white/[0.08] hover:bg-white/[0.16] border border-white/15 hover:border-white/30 backdrop-blur-md transition-all text-[12px] cursor-pointer">Protected Areas</button>
+</div>
+</div></div></section></div></div><section id="use-cases" data-nav="dark" class="relative w-full bg-black"><div aria-hidden="true" class="hidden h-24 lg:block"></div><div data-nav-anchor="use-cases" aria-hidden="true" class="h-0 w-0"></div><div><div class="relative w-full lg:h-[100svh]"><div class="mx-auto hidden h-full max-w-shell px-10 pt-24 pb-24 lg:flex"><div class="grid h-full w-full grid-cols-3 grid-rows-1 gap-x-12"><div class="flex flex-col items-start justify-start pr-6"><span class="inline-flex items-center gap-[4px] w-fit h-[24px] rounded-[7px] text-[12px] font-normal uppercase tracking-[0.02em] leading-[166.7%] whitespace-nowrap select-none transition-colors duration-500 border-tag text-tag " style="padding: 2.5px 6px 1px; border-width: 1px; border-style: solid; border-color: var(--color-tag);">DISCOVER WHAT&#x27;S POSSIBLE</span><h2 class="mt-4 text-balance text-display font-normal leading-[1.05] text-white">More Than Data. A Clearer View of Our Environment.</h2><p class="mt-5 max-w-[300px] text-body text-white/60">Turn environmental information into meaningful knowledge through accessible data discovery, visualisation, and exploration.</p><a href="https://playground.twelvelabs.io/get-started?option=jockey&amp;path=agent" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-[8px] w-fit text-[16px] font-normal leading-[24px] tracking-[0em] cursor-pointer select-none whitespace-nowrap transition-[background-color,transform,border-color] duration-150 ease-out active:scale-[0.97] h-[44px] px-[16px] rounded-[14px] bg-fg text-page hover:bg-fg/90 active:bg-fg/85 mt-8" style="text-decoration: none;"><span>Get started</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></div><div class="@container col-span-2 flex h-full min-h-0 flex-col pl-12"><div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-4 mb-8 w-full" style="height:220px;max-height:220px;min-height:220px;flex:none;"><div style="display:flex;gap:16px;height:100%;width:100%;"><div class="relative flex-1 h-full min-w-0 overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-00.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative flex-1 h-full min-w-0 overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-05.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative flex-1 h-full min-w-0 overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-04.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative flex-1 h-full min-w-0 overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-07.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div></div></div><div class="grid grid-cols-2 gap-x-12 gap-y-16"><div><h3 class="flex items-start gap-2 text-balance font-normal text-white text-heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tags mt-[0.23em] shrink-0 text-white size-[0.85em]" aria-hidden="true"><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"></path><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"></path><circle cx="10.5" cy="6.5" r=".5" fill="currentColor"></circle></svg><span>Discover Environmental Data</span></h3><p class="max-w-[42ch] text-balance text-white/60 mt-2 text-body"><strong class="block font-medium text-white/95 mb-1">Find the Information That Matters.</strong>Search and explore environmental datasets across multiple themes from one central platform.</p></div><div><h3 class="flex items-start gap-2 text-balance font-normal text-white text-heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap mt-[0.23em] shrink-0 text-white size-[0.85em]" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><span>Explore Interactive Maps</span></h3><p class="max-w-[42ch] text-balance text-white/60 mt-2 text-body"><strong class="block font-medium text-white/95 mb-1">See Environmental Data in Context.</strong>Understand environmental information geographically through maps, locations, and spatial visualisations.</p></div><div><h3 class="flex items-start gap-2 text-balance font-normal text-white text-heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-face mt-[0.23em] shrink-0 text-white size-[0.85em]" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg><span>Understand Environmental Trends</span></h3><p class="max-w-[42ch] text-balance text-white/60 mt-2 text-body"><strong class="block font-medium text-white/95 mb-1">Explore Patterns Over Time.</strong>Use available monitoring information and historical records to better understand environmental changes.</p></div><div><h3 class="flex items-start gap-2 text-balance font-normal text-white text-heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column-big mt-[0.23em] shrink-0 text-white size-[0.85em]" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><rect x="15" y="5" width="4" height="12" rx="1"></rect><rect x="7" y="8" width="4" height="9" rx="1"></rect></svg><span>Access Environmental Resources</span></h3><p class="max-w-[42ch] text-balance text-white/60 mt-2 text-body"><strong class="block font-medium text-white/95 mb-1">Knowledge Within Reach.</strong>Browse data catalogues, access published environmental information, and discover resources relevant to your interests.</p></div></div></div></div></div><div class="flex flex-col px-3 sm:px-6 md:px-10 lg:hidden"><div class="mx-auto flex w-full max-w-[460px] flex-col py-[8vh] sm:max-w-none"><span class="inline-flex items-center gap-[4px] w-fit h-[24px] rounded-[7px] text-[12px] font-normal uppercase tracking-[0.02em] leading-[166.7%] whitespace-nowrap select-none transition-colors duration-500 border-tag text-tag " style="padding: 2.5px 6px 1px; border-width: 1px; border-style: solid; border-color: var(--color-tag);">DISCOVER WHAT&#x27;S POSSIBLE</span><h2 class="mt-2 text-balance text-title font-normal leading-[1.06] text-white">More Than Data. A Clearer View of Our Environment.</h2><a href="https://playground.twelvelabs.io/get-started?option=jockey&amp;path=agent" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-[8px] w-fit text-[16px] font-normal leading-[24px] tracking-[0em] cursor-pointer select-none whitespace-nowrap transition-[background-color,transform,border-color] duration-150 ease-out active:scale-[0.97] h-[44px] px-[16px] rounded-[14px] bg-fg text-page hover:bg-fg/90 active:bg-fg/85 mt-4 self-start" style="text-decoration: none;"><span>Get started</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><div class="relative my-4 w-full h-[62svh] min-h-[460px] sm:aspect-[16/10] sm:h-auto sm:min-h-0"><div class="@container absolute inset-0"><div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/60 p-3 w-full" style="min-height:200px;"><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;width:100%;"><div class="relative overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15 aspect-[4/3]" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-00.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15 aspect-[4/3]" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-05.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15 aspect-[4/3]" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-04.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div><div class="relative overflow-hidden rounded-2xl bg-neutral-900 ring-1 ring-inset ring-white/15 aspect-[4/3]" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.5);"><img src="/img/ead-room/ead-07.jpg" alt="" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" /></div></div></div></div></div><div class="mt-1 flex items-center gap-3"><button type="button" aria-label="Previous feature" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/40 hover:text-white active:scale-95"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><div class="relative min-w-0 flex-1 overflow-hidden"><div class="grid" aria-hidden="true"><div class="invisible col-start-1 row-start-1 flex flex-col justify-center"><h3 class="flex items-start gap-2 text-balance font-normal text-white text-body"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tags mt-[0.23em] shrink-0 text-white size-[1.05em]" aria-hidden="true"><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"></path><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"></path><circle cx="10.5" cy="6.5" r=".5" fill="currentColor"></circle></svg><span>Discover Environmental Data</span></h3><p class="mt-1 text-sm leading-snug text-white/60"><strong class="block font-medium text-white/95 mb-0.5">Find the Information That Matters.</strong>Search and explore environmental datasets across multiple themes from one central platform.</p></div><div class="invisible col-start-1 row-start-1 flex flex-col justify-center"><h3 class="flex items-start gap-2 text-balance font-normal text-white text-body"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap mt-[0.23em] shrink-0 text-white size-[1.05em]" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg><span>Explore Interactive Maps</span></h3><p class="mt-1 text-sm leading-snug text-white/60"><strong class="block font-medium text-white/95 mb-0.5">See Environmental Data in Context.</strong>Understand environmental information geographically through maps, locations, and spatial visualisations.</p></div><div class="invisible col-start-1 row-start-1 flex flex-col justify-center"><h3 class="flex items-start gap-2 text-balance font-normal text-white text-body"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-scan-face mt-[0.23em] shrink-0 text-white size-[1.05em]" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M9 9h.01"></path><path d="M15 9h.01"></path></svg><span>Understand Environmental Trends</span></h3><p class="mt-1 text-sm leading-snug text-white/60"><strong class="block font-medium text-white/95 mb-0.5">Explore Patterns Over Time.</strong>Use available monitoring information and historical records to better understand environmental changes.</p></div><div class="invisible col-start-1 row-start-1 flex flex-col justify-center"><h3 class="flex items-start gap-2 text-balance font-normal text-white text-body"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column-big mt-[0.23em] shrink-0 text-white size-[1.05em]" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><rect x="15" y="5" width="4" height="12" rx="1"></rect><rect x="7" y="8" width="4" height="9" rx="1"></rect></svg><span>Access Environmental Resources</span></h3><p class="mt-1 text-sm leading-snug text-white/60"><strong class="block font-medium text-white/95 mb-0.5">Knowledge Within Reach.</strong>Browse data catalogues, access published environmental information, and discover resources relevant to your interests.</p></div></div><div class="jk-feat-anim absolute inset-0 flex flex-col justify-center" style="--jk-feat-dx: 14px;"><h3 class="flex items-start gap-2 text-balance font-normal text-white text-body"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tags mt-[0.23em] shrink-0 text-white size-[1.05em]" aria-hidden="true"><path d="M13.172 2a2 2 0 0 1 1.414.586l6.71 6.71a2.4 2.4 0 0 1 0 3.408l-4.592 4.592a2.4 2.4 0 0 1-3.408 0l-6.71-6.71A2 2 0 0 1 6 9.172V3a1 1 0 0 1 1-1z"></path><path d="M2 7v6.172a2 2 0 0 0 .586 1.414l6.71 6.71a2.4 2.4 0 0 0 3.191.193"></path><circle cx="10.5" cy="6.5" r=".5" fill="currentColor"></circle></svg><span>Discover Environmental Data</span></h3><p class="mt-1 text-sm leading-snug text-white/60"><strong class="block font-medium text-white/95 mb-0.5">Find the Information That Matters.</strong>Search and explore environmental datasets across multiple themes from one central platform.</p></div></div><button type="button" aria-label="Next feature" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors hover:border-white/40 hover:text-white active:scale-95"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div></div></div></div></div></section><section id="edp-shipped-flow" data-nav="dark" class="edp-ss-section"><style>.edp-ss-section{position:relative;width:100%;overflow:hidden;background-color:#000000;color:#eeeeee;padding:96px 0 128px;}.edp-ss-header{max-width:1376px;margin:0 auto;padding:0 24px;display:flex;flex-direction:column;align-items:flex-start;gap:16px;}.edp-ss-eyebrow{display:inline-flex;align-items:center;gap:4px;width:fit-content;height:24px;border-radius:7px;font-size:12px;font-weight:400;text-transform:uppercase;letter-spacing:0.04em;line-height:166.7%;white-space:nowrap;border:1px solid rgba(255,255,255,0.28);padding:0 10px;color:rgba(238,238,238,0.85);}.edp-ss-title{margin:0;font-size:clamp(28px,3.1vw,42px);font-weight:500;letter-spacing:-0.035em;line-height:1.12;color:#eeeeee;max-width:60rem;}.edp-ss-sub{margin:0;font-size:16px;line-height:1.55;color:rgba(238,238,238,0.6);max-width:44rem;}.edp-ss-stage-wrap{max-width:1376px;margin:0 auto;padding:0 24px;}.edp-ss-stage{position:relative;width:100%;height:calc(var(--ss-h) + 280px);margin-top:44px;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;--ss-gap:36px;}.edp-ss-stage.is-dragging{cursor:grabbing;}.edp-ss-card{position:absolute;top:50%;left:50%;display:block;width:var(--ss-w);height:var(--ss-h);will-change:transform;cursor:pointer;text-decoration:none;color:inherit;outline:none;}.edp-ss-frame{position:absolute;inset:0;transform-origin:0 0;background-color:#333333;will-change:transform;}.edp-ss-media{position:absolute;inset:0;overflow:hidden;background-color:#242424;}.edp-ss-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none;}.edp-ss-dim{position:absolute;inset:0;transform-origin:0 0;background-color:#000000;pointer-events:none;will-change:transform,opacity;}.edp-ss-cap-bar{position:absolute;top:100%;left:0;right:0;height:78px;display:flex;align-items:center;pointer-events:none;}.edp-ss-cap-clip{display:block;min-width:0;overflow:hidden;width:100%;}.edp-ss-cap-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;will-change:transform,opacity;}.edp-ss-cap-meta{min-width:0;flex:1;display:flex;flex-direction:column;gap:3px;}.edp-ss-cap-text{display:block;font-size:15px;font-weight:600;color:#ffffff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.25;}.edp-ss-cap-desc{display:block;font-size:12.5px;font-weight:400;color:rgba(238,238,238,0.68);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.35;}.edp-ss-cap-cta{flex-shrink:0;font-size:12px;font-weight:500;color:#00e699;white-space:nowrap;display:inline-flex;align-items:center;gap:4px;}.edp-ss-nav{position:absolute;top:calc(50% + var(--ss-h) / 2 + 78px + var(--ss-gap));left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:center;gap:8px;pointer-events:none;}.edp-ss-btn{pointer-events:auto;display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;background-color:#333333;color:#eeeeee;border:none;cursor:pointer;transition:background-color 0.2s cubic-bezier(0.16,1,0.3,1),transform 0.2s cubic-bezier(0.16,1,0.3,1);}.edp-ss-btn:hover{background-color:#444444;}.edp-ss-btn:active{transform:scale(0.9);}.edp-ss-all-wrap{margin-top:28px;display:flex;justify-content:center;position:relative;z-index:210;}.edp-ss-all-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 28px;border-radius:14px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.22);color:#ffffff;font-size:15px;font-weight:500;text-decoration:none;backdrop-filter:blur(10px);transition:all 0.2s cubic-bezier(0.16,1,0.3,1);}.edp-ss-all-btn:hover{background:#ffffff;color:#000000;border-color:#ffffff;transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,255,255,0.18);}.edp-ss-modal-backdrop{position:fixed;inset:0;z-index:9999;background:rgba(10,10,11,0.86);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:24px;}.edp-ss-modal{width:100%;max-width:840px;background:#1c1b1c;border:1px solid rgba(255,255,255,0.12);overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,0.65);color:#eeeeee;}.edp-ss-modal-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#111;}.edp-ss-modal-body{padding:24px 28px 28px;display:flex;flex-direction:column;gap:12px;}.edp-ss-modal-top{display:flex;align-items:center;justify-content:space-between;gap:16px;}.edp-ss-modal-cat{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#00e699;}.edp-ss-modal-close{background:#333333;color:#eeeeee;border:none;width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;line-height:1;}.edp-ss-modal-close:hover{background:#484848;}.edp-ss-modal-link{display:inline-flex;align-items:center;gap:8px;margin-top:6px;width:fit-content;padding:10px 20px;background:#ffffff;color:#000000;font-size:14px;font-weight:500;text-decoration:none;border-radius:10px;transition:opacity 0.15s ease;}.edp-ss-modal-link:hover{opacity:0.88;}@media(min-width:1024px){.edp-ss-section{padding:128px 0 156px;}.edp-ss-header,.edp-ss-stage-wrap{padding:0 32px;}.edp-ss-stage{height:calc(var(--ss-h) + 370px);--ss-gap:68px;margin-top:76px;}}</style><div class="edp-ss-header"><span class="edp-ss-eyebrow">EXPLORE SMART APPLICATIONS</span><h2 class="edp-ss-title">Environmental Intelligence. Ready to Explore.</h2><p class="edp-ss-sub">Access digital applications that bring environmental data to life through visual insights, monitoring information, maps, and environmental services.</p></div><div class="edp-ss-stage-wrap"><div class="edp-ss-stage" style="--ss-w:576px;--ss-h:361.8px"><a href="https://avatar.ead.ae/" aria-label="Avatar" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(0.000px, 0.000px) rotate(0.0000deg) scale(1.000000);z-index:100;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-16.000px, -16.000px) scale(1.05556, 1.25981)"></span><span class="edp-ss-media"><img src="/img/smart-apps/01-avatar.jpg" alt="Avatar" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-16.000px, -16.000px) scale(1.05556, 1.25981);opacity:0.000"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 0.0%);opacity:1.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Avatar</span><span class="edp-ss-cap-desc">EAD Avatar and chatbot are innovative AI-powered solution that enhances access to, and engagement with, environmental education through lifelike avatars Souheil and Dana, which are fluent in Arabic and English. It is powered by advanced AI using verified information for natural, reliable interaction. Transforms how EAD communicates with the public. Enhances accessibility to environmental education.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://envirobot.ead.ae/" aria-label="Chatbot" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(201.739px, 54.056px) rotate(2.2500deg) scale(0.890000);z-index:90;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-8.800px, -8.800px) scale(1.03056, 1.04865)"></span><span class="edp-ss-media"><img src="/img/smart-apps/02-chatbot.jpg" alt="Chatbot" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-8.800px, -8.800px) scale(1.03056, 1.04865);opacity:0.300"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Chatbot</span><span class="edp-ss-cap-desc">EAD Avatar and chatbot are innovative AI-powered solution that enhances access to, and engagement with, environmental education through lifelike avatars Souheil and Dana, which are fluent in Arabic and English. It is powered by advanced AI using verified information for natural, reliable interaction. Transforms how EAD communicates with the public. Enhances accessibility to environmental education.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://edp.ead.ae/map" aria-label="Enviroportal" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(381.287px, 102.166px) rotate(3.8250deg) scale(0.792100);z-index:80;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-4.840px, -4.840px) scale(1.01681, 1.02676)"></span><span class="edp-ss-media"><img src="/img/smart-apps/03-enviroportal.png" alt="Enviroportal" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-4.840px, -4.840px) scale(1.01681, 1.02676);opacity:0.400"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Enviroportal</span><span class="edp-ss-cap-desc">The Enviroportal by the Environment Agency – Abu Dhabi provides an interactive map that allows users to explore environmental data across the region. The portal offers spatial tools to analyze various datasets, such as biodiversity, water resources, and air quality, promoting transparency and informed decision-making for conservation efforts. Users can visualize environmental conditions in real-time, aiding both public awareness and scientific research.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://adairquality.ae" aria-label="Air Quality Portal" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(541.084px, 144.983px) rotate(4.9275deg) scale(0.704969);z-index:70;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-2.662px, -2.662px) scale(1.00924, 1.01472)"></span><span class="edp-ss-media"><img src="/img/smart-apps/04-air-quality-portal.jpg" alt="Air Quality Portal" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-2.662px, -2.662px) scale(1.00924, 1.01472);opacity:0.500"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Air Quality Portal</span><span class="edp-ss-cap-desc">The Abu Dhabi Air Quality website provides real-time data on air quality across the region, helping the public monitor air pollution levels through the Air Quality Index (AQI). It features interactive tools that track pollutants such as PM10, PM2.5, and NO2, with hourly updates on air quality trends. The platform offers insights on health recommendations based on AQI levels, pollutant sources, and weather conditions. Additionally, it promotes awareness of sustainable practices to improve air quality.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://adnature.ead.ae/" aria-label="Abu Dhabi Nature" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(683.304px, 183.091px) rotate(5.6993deg) scale(0.627422);z-index:60;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-1.464px, -1.464px) scale(1.00508, 1.00809)"></span><span class="edp-ss-media"><img src="/img/smart-apps/05-abu-dhabi-nature.jpg" alt="Abu Dhabi Nature" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-1.464px, -1.464px) scale(1.00508, 1.00809);opacity:0.600"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Abu Dhabi Nature</span><span class="edp-ss-cap-desc">The Abu Dhabi Nature platform, managed by the Environment Agency – Abu Dhabi (EAD), is dedicated to showcasing the biodiversity of the region. It provides users with detailed information on native species, habitats, and conservation efforts across Abu Dhabi. The platform promotes awareness of the emirate’s rich natural heritage through interactive tools, species guides, and educational resources. It supports both public users and researchers in understanding the region's unique ecosystems and the importance of preserving them.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://naha.ae/en" aria-label="Naha" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(809.880px, 217.007px) rotate(6.2395deg) scale(0.558406);z-index:50;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.805px, -0.805px) scale(1.00280, 1.00445)"></span><span class="edp-ss-media"><img src="/img/smart-apps/06-naha.jpg" alt="Naha" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.805px, -0.805px) scale(1.00280, 1.00445);opacity:0.700"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Naha</span><span class="edp-ss-cap-desc">The Naha platform, powered by the Environment Agency – Abu Dhabi (EAD), is a community-driven initiative that transforms climate intentions into meaningful actions. It offers resources, tools, and personalized journeys to help users adopt sustainable practices and make informed environmental decisions. With a focus on engaging youth and the community, Naha aligns individual efforts with broader climate goals, supporting the UAE's sustainability vision. The platform fosters collaboration, knowledge sharing, and celebrates achievements in conservation and environmental action.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://www.aldaleela.ae/" aria-label="Al Daleela" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(922.532px, 247.192px) rotate(6.6176deg) scale(0.496981);z-index:40;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.443px, -0.443px) scale(1.00154, 1.00245)"></span><span class="edp-ss-media"><img src="/img/smart-apps/07-al-daleela.png" alt="Al Daleela" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.443px, -0.443px) scale(1.00154, 1.00245);opacity:0.800"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Al Daleela</span><span class="edp-ss-cap-desc">The Al Daleela platform is a comprehensive mapping tool that provides users with access to a wide array of geospatial data for the Emirate of Abu Dhabi. It allows users to explore maps, track environmental changes, and analyze various geographic features across the region. The platform offers an interactive experience to view points of interest, land use, and environmental conservation efforts, supporting research, planning, and conservation activities.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://birdtracking.ead.ae/home.html" aria-label="Bird Tracking System" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1022.793px, 274.056px) rotate(6.8823deg) scale(0.442313);z-index:30;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.244px, -0.244px) scale(1.00085, 1.00135)"></span><span class="edp-ss-media"><img src="/img/smart-apps/08-bird-tracking-system.png" alt="Bird Tracking System" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.244px, -0.244px) scale(1.00085, 1.00135);opacity:0.900"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Bird Tracking System</span><span class="edp-ss-cap-desc">The Environment Agency – Abu Dhabi's Bird Tracking Information System uses telemetry to monitor migratory birds such as flamingos and raptors. Since 2005, it has tracked various species, providing vital migration data through secure storage and analysis. This supports bird conservation, long-term data preservation, and scientific research, though data access is mostly restricted.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://ead-nfis.ead.ae/" aria-label="National Fisheries Information System" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1112.025px, 297.966px) rotate(7.0676deg) scale(0.393659);z-index:20;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.134px, -0.134px) scale(1.00047, 1.00074)"></span><span class="edp-ss-media"><img src="/img/smart-apps/09-national-fisheries-information-system.jpg" alt="National Fisheries Information System" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.134px, -0.134px) scale(1.00047, 1.00074);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">National Fisheries Information System</span><span class="edp-ss-cap-desc">The UAE National Fisheries Information System (NFIS) is a platform designed for the statistical monitoring of fisheries in the UAE, managed by the Environment Agency – Abu Dhabi. It provides data summaries, insights, and methodology details for public use. Restricted sections of the platform are accessible only with valid credentials, offering advanced functionalities for authorized users to monitor and manage fisheries data.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/1b2a0c39-6a90-11ef-80a0-9fed54b84a43/map" aria-label="Oil Spill Monitoring" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1191.441px, 319.246px) rotate(7.1973deg) scale(0.350356);z-index:10;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.074px, -0.074px) scale(1.00026, 1.00041)"></span><span class="edp-ss-media"><img src="/img/smart-apps/10-oil-spill-monitoring.png" alt="Oil Spill Monitoring" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.074px, -0.074px) scale(1.00026, 1.00041);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Oil Spill Monitoring</span><span class="edp-ss-cap-desc">Detection of oil spill using SAR imagery</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/160c96b3-a0d0-11ef-b251-53388117a44f/map" aria-label="Marine Debris" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1262.122px, 338.184px) rotate(7.2881deg) scale(0.311817);z-index:0;visibility:hidden"><span class="edp-ss-frame" style="transform:translate(-0.041px, -0.041px) scale(1.00014, 1.00022)"></span><span class="edp-ss-media"><img src="/img/smart-apps/11-marine-debris.png" alt="Marine Debris" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.041px, -0.041px) scale(1.00014, 1.00022);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Marine Debris</span><span class="edp-ss-cap-desc">AI model to detect and monitor marine debris using satellite imagery.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/d5973406-95ff-11ef-be2f-a198a834d301/map" aria-label="Algal Bloom" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1325.027px, 355.040px) rotate(7.3517deg) scale(0.277517);z-index:-10;visibility:hidden"><span class="edp-ss-frame" style="transform:translate(-0.022px, -0.022px) scale(1.00008, 1.00012)"></span><span class="edp-ss-media"><img src="/img/smart-apps/12-algal-bloom.png" alt="Algal Bloom" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.022px, -0.022px) scale(1.00008, 1.00012);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Algal Bloom</span><span class="edp-ss-cap-desc">AI model to identify and map algal blooms using satellite data.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/outfall" aria-label="Outfall Monitoring" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(1381.013px, 370.041px) rotate(7.3962deg) scale(0.246990);z-index:-20;visibility:hidden"><span class="edp-ss-frame" style="transform:translate(-0.012px, -0.012px) scale(1.00004, 1.00007)"></span><span class="edp-ss-media"><img src="/img/smart-apps/13-outfall-monitoring.png" alt="Outfall Monitoring" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.012px, -0.012px) scale(1.00004, 1.00007);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Outfall Monitoring</span><span class="edp-ss-cap-desc">Monitoring of the outfall locations using satellite imagery</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/3e94a469-6a88-11ef-80a0-8729faecbc39/map" aria-label="Fish Species Identification" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-1325.027px, -355.040px) rotate(-7.3517deg) scale(0.277517);z-index:-10;visibility:hidden"><span class="edp-ss-frame" style="transform:translate(-0.022px, -0.022px) scale(1.00008, 1.00012)"></span><span class="edp-ss-media"><img src="/img/smart-apps/14-fish-species-identification.png" alt="Fish Species Identification" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.022px, -0.022px) scale(1.00008, 1.00012);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Fish Species Identification</span><span class="edp-ss-cap-desc">AI Detection for classification of fishes in underwater videos.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/1b17963b-6ab5-11ef-b8ad-4d4e4986ebb8/map" aria-label="Birds, Nests and Animal Identification and Counting" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-1262.122px, -338.184px) rotate(-7.2881deg) scale(0.311817);z-index:0;visibility:hidden"><span class="edp-ss-frame" style="transform:translate(-0.041px, -0.041px) scale(1.00014, 1.00022)"></span><span class="edp-ss-media"><img src="/img/smart-apps/15-birds-nests-and-animal-identification-and-counting.png" alt="Birds, Nests and Animal Identification and Counting" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.041px, -0.041px) scale(1.00014, 1.00022);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Birds, Nests and Animal Identification and Counting</span><span class="edp-ss-cap-desc">AI models for identification and counting of various species of Birds,nests and animals.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/49b6e77e-6aab-11ef-80a0-b33d95c884f6/map" aria-label="Jaywun Habitat" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-1191.441px, -319.246px) rotate(-7.1973deg) scale(0.350356);z-index:10;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.074px, -0.074px) scale(1.00026, 1.00041)"></span><span class="edp-ss-media"><img src="/img/smart-apps/16-jaywun-habitat.png" alt="Jaywun Habitat" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.074px, -0.074px) scale(1.00026, 1.00041);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Jaywun Habitat</span><span class="edp-ss-cap-desc">AI Detection for classification of marine habitats in underwater videos</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/1bc6386a-6b6c-11ef-9d13-35f266c23f45/map" aria-label="Land Subsidence Modelling" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-1112.025px, -297.966px) rotate(-7.0676deg) scale(0.393659);z-index:20;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.134px, -0.134px) scale(1.00047, 1.00074)"></span><span class="edp-ss-media"><img src="/img/smart-apps/17-land-subsidence-modelling.png" alt="Land Subsidence Modelling" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.134px, -0.134px) scale(1.00047, 1.00074);opacity:0.920"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Land Subsidence Modelling</span><span class="edp-ss-cap-desc">Land deformation maps for agreed upon areas.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/44b85a75-6b51-11ef-9d13-4d4052e2ff5b/map" aria-label="Change Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-1022.793px, -274.056px) rotate(-6.8823deg) scale(0.442313);z-index:30;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.244px, -0.244px) scale(1.00085, 1.00135)"></span><span class="edp-ss-media"><img src="/img/smart-apps/18-change-detection.png" alt="Change Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.244px, -0.244px) scale(1.00085, 1.00135);opacity:0.900"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Change Detection</span><span class="edp-ss-cap-desc">AI model for Change detection using satellite imagery</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/08e39bd9-a56c-11ef-a3ac-2b7b1e0c419c/map" aria-label="Dredges Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-922.532px, -247.192px) rotate(-6.6176deg) scale(0.496981);z-index:40;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.443px, -0.443px) scale(1.00154, 1.00245)"></span><span class="edp-ss-media"><img src="/img/smart-apps/19-dredges-detection.png" alt="Dredges Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.443px, -0.443px) scale(1.00154, 1.00245);opacity:0.800"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Dredges Detection</span><span class="edp-ss-cap-desc">AI model to detect and track dredging activities in water bodies.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/59b02a9c-ab2d-11ef-a3ac-93dd81f10994/map" aria-label="Urban Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-809.880px, -217.007px) rotate(-6.2395deg) scale(0.558406);z-index:50;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-0.805px, -0.805px) scale(1.00280, 1.00445)"></span><span class="edp-ss-media"><img src="/img/smart-apps/20-urban-detection.png" alt="Urban Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-0.805px, -0.805px) scale(1.00280, 1.00445);opacity:0.700"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Urban Detection</span><span class="edp-ss-cap-desc">Monitors and maps urban growth and development using satellite imagery and AI analysis.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/cb5c1879-9682-11ef-9021-c9971de44032/map" aria-label="Coastline Change Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-683.304px, -183.091px) rotate(-5.6993deg) scale(0.627422);z-index:60;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-1.464px, -1.464px) scale(1.00508, 1.00809)"></span><span class="edp-ss-media"><img src="/img/smart-apps/21-coastline-change-detection.png" alt="Coastline Change Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-1.464px, -1.464px) scale(1.00508, 1.00809);opacity:0.600"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Coastline Change Detection</span><span class="edp-ss-cap-desc">Quantifies changes in coastlines over time, providing geo-referenced outputs for monitoring.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/e6192bf6-a1b0-11ef-b251-43b49aeb1e11/map" aria-label="Vegetation Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-541.084px, -144.983px) rotate(-4.9275deg) scale(0.704969);z-index:70;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-2.662px, -2.662px) scale(1.00924, 1.01472)"></span><span class="edp-ss-media"><img src="/img/smart-apps/22-vegetation-detection.png" alt="Vegetation Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-2.662px, -2.662px) scale(1.00924, 1.01472);opacity:0.500"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Vegetation Detection</span><span class="edp-ss-cap-desc">Detects and maps vegetation cover using remote sensing and AI models for environmental monitoring.</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/99228419-6a87-11ef-80a0-097581232549/map" aria-label="Tree Species Detection" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-381.287px, -102.166px) rotate(-3.8250deg) scale(0.792100);z-index:80;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-4.840px, -4.840px) scale(1.01681, 1.02676)"></span><span class="edp-ss-media"><img src="/img/smart-apps/23-tree-species-detection.png" alt="Tree Species Detection" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-4.840px, -4.840px) scale(1.01681, 1.02676);opacity:0.400"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Tree Species Detection</span><span class="edp-ss-cap-desc">AI model for tree detection using satelite imagery</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><a href="https://app-staging.giq.ae/workspace/70fadd93-6b4c-11ef-b8ad-37d7a1c3431a/map" aria-label="Camera Trap Analysis Species Monitoring" draggable="false" class="edp-ss-card" style="transform:translate(-50%, -50%) translate(-201.739px, -54.056px) rotate(-2.2500deg) scale(0.890000);z-index:90;visibility:visible"><span class="edp-ss-frame" style="transform:translate(-8.800px, -8.800px) scale(1.03056, 1.04865)"></span><span class="edp-ss-media"><img src="/img/smart-apps/24-camera-trap-analysis-species-monitoring.png" alt="Camera Trap Analysis Species Monitoring" loading="eager" draggable="false" /></span><span class="edp-ss-dim" style="transform:translate(-8.800px, -8.800px) scale(1.03056, 1.04865);opacity:0.300"></span><span class="edp-ss-cap-bar"><span class="edp-ss-cap-clip"><span class="edp-ss-cap-inner" style="transform:translate(0%, 115.0%);opacity:0.000"><span class="edp-ss-cap-meta"><span class="edp-ss-cap-text">Camera Trap Analysis Species Monitoring</span><span class="edp-ss-cap-desc">AI model for detection of various species captured in Camera Traps during survey</span></span><span class="edp-ss-cap-cta">Explore →</span></span></span></span></a><div class="edp-ss-nav"><button type="button" aria-label="Previous application" class="edp-ss-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M10.5 3.2L5 8l5.5 4.8V3.2z"/></svg></button><button type="button" aria-label="Next application" class="edp-ss-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M5.5 3.2L11 8l-5.5 4.8V3.2z"/></svg></button></div></div></div><div class="edp-ss-all-wrap"><a href="https://edp.ead.ae/home/" class="edp-ss-all-btn"><span>View All Applications</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></section><section id="environmental-glance" data-nav="dark" class="edp-kpi-section"><style>.edp-kpi-section{position:relative;width:100%;overflow:hidden;background-color:#000000;color:#ffffff;padding:112px 0 132px;}.edp-kpi-divider{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.12) 22%,rgba(0,230,153,0.38) 50%,rgba(255,255,255,0.12) 78%,transparent 100%);}.edp-kpi-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 68% 48% at 50% 62%,rgba(0,204,136,0.09) 0%,rgba(0,120,90,0.03) 45%,transparent 75%);}.edp-kpi-container{position:relative;z-index:2;max-width:1376px;margin:0 auto;padding:0 24px;}.edp-kpi-header{display:flex;flex-direction:column;gap:24px;margin-bottom:64px;}.edp-kpi-head-left{display:flex;flex-direction:column;align-items:flex-start;gap:18px;max-width:700px;}.edp-kpi-eyebrow{display:inline-flex;align-items:center;gap:8px;width:fit-content;height:26px;border-radius:7px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.04);padding:0 12px;color:rgba(255,255,255,0.88);}.edp-kpi-dot{width:6px;height:6px;border-radius:9999px;background:#00e699;box-shadow:0 0 10px #00e699;animation:edpKpiPulse 2.4s ease-in-out infinite;}@keyframes edpKpiPulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.45;transform:scale(0.85);}}.edp-kpi-title{margin:0;font-size:clamp(32px,3.8vw,52px);font-weight:500;letter-spacing:-0.035em;line-height:1.08;color:#ffffff;}.edp-kpi-title-accent{color:rgba(255,255,255,0.58);}.edp-kpi-sub{margin:0;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.62);max-width:440px;}.edp-kpi-grid{display:grid;grid-template-columns:1fr;gap:20px;}.edp-kpi-card{position:relative;display:flex;flex-direction:column;justify-content:flex-start;padding:32px 30px 34px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.045) 0%,rgba(255,255,255,0.015) 100%);border:1px solid rgba(255,255,255,0.1);text-decoration:none;color:inherit;overflow:hidden;transition:border-color 0.25s ease,transform 0.25s cubic-bezier(0.16,1,0.3,1),background 0.25s ease,box-shadow 0.25s ease;}.edp-kpi-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(0,230,153,0.45) 50%,transparent 100%);opacity:0;transition:opacity 0.25s ease;}.edp-kpi-card:hover{border-color:rgba(0,230,153,0.38);background:linear-gradient(180deg,rgba(0,230,153,0.07) 0%,rgba(255,255,255,0.02) 100%);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,0.6),0 0 32px rgba(0,230,153,0.08);}.edp-kpi-card:hover::before{opacity:1;}.edp-kpi-card-top{display:flex;align-items:center;justify-content:flex-start;margin-bottom:26px;}.edp-kpi-icon-wrap{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:rgba(0,230,153,0.08);border:1px solid rgba(0,230,153,0.22);color:#00e699;transition:background 0.25s ease,border-color 0.25s ease;}.edp-kpi-card:hover .edp-kpi-icon-wrap{background:rgba(0,230,153,0.15);border-color:rgba(0,230,153,0.45);}.edp-kpi-metric-row{display:flex;align-items:baseline;gap:3px;margin-bottom:18px;}.edp-kpi-value{font-size:clamp(46px,4.5vw,64px);font-weight:500;letter-spacing:-0.04em;line-height:1;color:#ffffff;font-variant-numeric:tabular-nums;}.edp-kpi-suffix{font-size:clamp(28px,2.8vw,38px);font-weight:400;color:#00e699;line-height:1;}.edp-kpi-bar-track{width:100%;height:2px;background:rgba(255,255,255,0.08);border-radius:999px;overflow:hidden;margin-bottom:22px;}.edp-kpi-bar-fill{height:100%;background:linear-gradient(90deg,#00cc88 0%,#00e699 100%);border-radius:999px;transition:width 1.1s cubic-bezier(0.16,1,0.3,1);}.edp-kpi-label{margin:0 0 8px;font-size:18px;font-weight:500;letter-spacing:-0.015em;color:#ffffff;}.edp-kpi-desc{margin:0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.58);}@media(min-width:768px){.edp-kpi-grid{grid-template-columns:repeat(3,1fr);gap:24px;}}@media(min-width:1024px){.edp-kpi-section{padding:128px 0 148px;}.edp-kpi-container{padding:0 32px;}.edp-kpi-header{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:72px;}.edp-kpi-grid{grid-template-columns:repeat(3,1fr);gap:24px;}}</style><div class="edp-kpi-divider" aria-hidden="true"></div><div class="edp-kpi-glow" aria-hidden="true"></div><div class="edp-kpi-container"><div class="edp-kpi-header"><div class="edp-kpi-head-left"><span class="edp-kpi-eyebrow"><span class="edp-kpi-dot" aria-hidden="true"></span>ENVIRONMENTAL DATA AT A GLANCE</span><h2 class="edp-kpi-title">A World of Environmental Knowledge. <span class="edp-kpi-title-accent">One Platform.</span></h2></div><p class="edp-kpi-sub">Discover the scale and diversity of environmental information brought together to support exploration, research, and informed decision-making.</p></div><div class="edp-kpi-grid"><a href="#edp-shipped-flow" class="edp-kpi-card"><div><div class="edp-kpi-card-top"><span class="edp-kpi-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4H10V10H4V4Z"/><path d="M14 4H20V10H14V4Z"/><path d="M4 14H10V20H4V14Z"/><path d="M14 14H20V20H14V14Z"/></svg></span></div><div class="edp-kpi-metric-row"><span class="edp-kpi-value">24</span></div><div class="edp-kpi-bar-track"><div class="edp-kpi-bar-fill" style="width:88%"></div></div></div><div><h3 class="edp-kpi-label">Smart Applications</h3><p class="edp-kpi-desc">Access interactive applications and environmental services.</p></div></a><a href="#whats-new" class="edp-kpi-card"><div><div class="edp-kpi-card-top"><span class="edp-kpi-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12H7L10 5L14 19L17 12H21"/></svg></span></div><div class="edp-kpi-metric-row"><span class="edp-kpi-value">199</span><span class="edp-kpi-suffix">+</span></div><div class="edp-kpi-bar-track"><div class="edp-kpi-bar-fill" style="width:94%"></div></div></div><div><h3 class="edp-kpi-label">Data Records</h3><p class="edp-kpi-desc">Discover environmental observations and available data records.</p></div></a><a href="#use-cases" class="edp-kpi-card"><div><div class="edp-kpi-card-top"><span class="edp-kpi-icon-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"/><path d="M3.6 9H20.4"/><path d="M3.6 15H20.4"/><path d="M12 3C9.8 5.5 8.5 8.6 8.5 12C8.5 15.4 9.8 18.5 12 21C14.2 18.5 15.5 15.4 15.5 12C15.5 8.6 14.2 5.5 12 3Z"/></svg></span></div><div class="edp-kpi-metric-row"><span class="edp-kpi-value">08</span></div><div class="edp-kpi-bar-track"><div class="edp-kpi-bar-fill" style="width:64%"></div></div></div><div><h3 class="edp-kpi-label">Environmental Themes</h3><p class="edp-kpi-desc">Explore information across interconnected environmental domains.</p></div></a></div></div></section><section id="whats-new" data-nav="dark" class="edp-news-section"><style>.edp-news-section{position:relative;width:100%;overflow:hidden;background-color:#000000;color:#ffffff;padding:112px 0 132px;}.edp-news-divider{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.12) 22%,rgba(0,230,153,0.32) 50%,rgba(255,255,255,0.12) 78%,transparent 100%);}.edp-news-container{position:relative;z-index:2;max-width:1376px;margin:0 auto;padding:0 24px;}.edp-news-header{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:56px;max-width:740px;}.edp-news-eyebrow{display:inline-flex;align-items:center;gap:8px;width:fit-content;height:26px;border-radius:7px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.04);padding:0 12px;color:rgba(255,255,255,0.88);}.edp-news-title{margin:0;font-size:clamp(32px,3.8vw,52px);font-weight:500;letter-spacing:-0.035em;line-height:1.08;color:#ffffff;}.edp-news-sub{margin:0;font-size:16px;line-height:1.65;color:rgba(255,255,255,0.62);max-width:600px;}.edp-news-grid{display:grid;grid-template-columns:1fr;gap:24px;}.edp-news-card{position:relative;display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,0.04) 0%,rgba(255,255,255,0.015) 100%);border:1px solid rgba(255,255,255,0.1);transition:border-color 0.28s ease,transform 0.28s cubic-bezier(0.16,1,0.3,1),box-shadow 0.28s ease;}.edp-news-card:hover{border-color:rgba(0,230,153,0.36);transform:translateY(-4px);box-shadow:0 24px 60px rgba(0,0,0,0.65),0 0 36px rgba(0,230,153,0.08);}.edp-news-media{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#0e1210;}.edp-news-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.55s cubic-bezier(0.16,1,0.3,1);}.edp-news-card:hover .edp-news-media img{transform:scale(1.05);}.edp-news-media-fade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.18) 0%,rgba(0,0,0,0.05) 45%,rgba(8,10,9,0.88) 100%);pointer-events:none;}.edp-news-tag{position:absolute;top:16px;left:16px;z-index:2;display:inline-flex;align-items:center;padding:5px 12px;border-radius:9999px;font-size:11.5px;font-weight:500;letter-spacing:0.02em;color:#ffffff;background:rgba(0,0,0,0.62);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(10px);}.edp-news-body{display:flex;flex-direction:column;flex:1;padding:24px 26px 26px;}.edp-news-card-title{margin:0 0 12px;font-size:22px;font-weight:500;letter-spacing:-0.02em;line-height:1.25;color:#ffffff;}.edp-news-card-desc{margin:0 0 26px;font-size:14.5px;line-height:1.65;color:rgba(255,255,255,0.62);flex:1;}.edp-news-card-footer{padding-top:18px;border-top:1px solid rgba(255,255,255,0.08);}.edp-news-card-btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:#00e699;text-decoration:none;transition:gap 0.2s ease,opacity 0.2s ease;}.edp-news-card-btn:hover{gap:12px;opacity:0.9;}.edp-news-footer-cta{margin-top:52px;display:flex;justify-content:center;}.edp-news-all-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 28px;border-radius:14px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.22);color:#ffffff;font-size:15px;font-weight:500;text-decoration:none;backdrop-filter:blur(10px);transition:all 0.2s cubic-bezier(0.16,1,0.3,1);}.edp-news-all-btn:hover{background:#ffffff;color:#000000;border-color:#ffffff;transform:translateY(-1px);box-shadow:0 8px 24px rgba(255,255,255,0.18);}@media(min-width:768px){.edp-news-grid{grid-template-columns:repeat(3,1fr);gap:24px;}}@media(min-width:1024px){.edp-news-section{padding:128px 0 148px;}.edp-news-container{padding:0 32px;}.edp-news-header{margin-bottom:64px;}}</style><div class="edp-news-divider" aria-hidden="true"></div><div class="edp-news-container"><div class="edp-news-header"><span class="edp-news-eyebrow">WHAT'S NEW</span><h2 class="edp-news-title">The Latest from Our Environment.</h2><p class="edp-news-sub">Stay informed about newly published datasets, environmental insights, platform improvements, and important announcements.</p></div><div class="edp-news-grid"><article class="edp-news-card"><div class="edp-news-media"><img src="/img/flow/ecosystem.jpg" alt="New Environmental Datasets" loading="eager" /><div class="edp-news-media-fade" aria-hidden="true"></div><span class="edp-news-tag">New Environmental Datasets</span></div><div class="edp-news-body"><h3 class="edp-news-card-title">Discover Recently Published Data.</h3><p class="edp-news-card-desc">Explore newly available datasets and expand your understanding of Abu Dhabi's environment.</p><div class="edp-news-card-footer"><a href="#use-cases" class="edp-news-card-btn"><span>Explore Datasets</span><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></article><article class="edp-news-card"><div class="edp-news-media"><img src="/img/ead-room/ead-05.jpg" alt="Environmental Insights" loading="eager" /><div class="edp-news-media-fade" aria-hidden="true"></div><span class="edp-news-tag">Environmental Insights</span></div><div class="edp-news-body"><h3 class="edp-news-card-title">New Perspectives on Our Environment.</h3><p class="edp-news-card-desc">Discover insights and information that reveal environmental patterns and conditions.</p><div class="edp-news-card-footer"><a href="#environmental-glance" class="edp-news-card-btn"><span>Explore Insights</span><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></article><article class="edp-news-card"><div class="edp-news-media"><img src="/img/smart-apps/04-air-quality-portal.jpg" alt="Platform Updates" loading="eager" /><div class="edp-news-media-fade" aria-hidden="true"></div><span class="edp-news-tag">Platform Updates</span></div><div class="edp-news-body"><h3 class="edp-news-card-title">Discover What's New on EDP.</h3><p class="edp-news-card-desc">Stay connected with new platform features, enhancements, and improvements to the environmental data experience.</p><div class="edp-news-card-footer"><a href="#edp-shipped-flow" class="edp-news-card-btn"><span>View Platform Updates</span><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></article></div><div class="edp-news-footer-cta"><a href="https://edp.ead.ae/home/" class="edp-news-all-btn"><span>View All Updates</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div></section><section id="about-platform" data-nav="dark" class="edp-about-section"><style>.edp-about-section{position:relative;width:100%;overflow:hidden;background-color:#000000;color:#ffffff;padding:112px 0 132px;}.edp-about-divider{position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,0.12) 22%,rgba(0,230,153,0.34) 50%,rgba(255,255,255,0.12) 78%,transparent 100%);}.edp-about-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 52% 60% at 75% 50%,rgba(0,204,136,0.09) 0%,transparent 70%);}.edp-about-container{position:relative;z-index:2;max-width:1376px;margin:0 auto;padding:0 24px;}.edp-about-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center;}.edp-about-content{display:flex;flex-direction:column;align-items:flex-start;}.edp-about-eyebrow{display:inline-flex;align-items:center;gap:8px;width:fit-content;height:26px;border-radius:7px;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;white-space:nowrap;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.04);padding:0 12px;color:rgba(255,255,255,0.88);margin-bottom:20px;}.edp-about-title{margin:0 0 24px;font-size:clamp(32px,3.8vw,52px);font-weight:500;letter-spacing:-0.035em;line-height:1.08;color:#ffffff;max-width:580px;}.edp-about-lead{margin:0 0 18px;font-size:17px;line-height:1.65;color:rgba(255,255,255,0.84);max-width:560px;}.edp-about-body{margin:0;font-size:15.5px;line-height:1.7;color:rgba(255,255,255,0.58);max-width:560px;}.edp-about-supporting{margin:32px 0 0;padding-left:18px;border-left:2px solid #00e699;font-size:clamp(19px,1.8vw,23px);font-weight:500;letter-spacing:-0.02em;line-height:1.3;color:#ffffff;}.edp-about-btn{margin-top:36px;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:50px;padding:0 28px;border-radius:14px;background:#ffffff;color:#000000;font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 8px 28px rgba(0,0,0,0.45);transition:all 0.2s cubic-bezier(0.16,1,0.3,1);}.edp-about-btn:hover{background:rgba(255,255,255,0.92);transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,230,153,0.16);}.edp-about-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);background:#080c0a;aspect-ratio:4/3;box-shadow:0 32px 80px rgba(0,0,0,0.7);}.edp-about-visual img.edp-about-photo{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.7s cubic-bezier(0.16,1,0.3,1);}.edp-about-visual:hover img.edp-about-photo{transform:scale(1.03);}.edp-about-visual-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.08) 0%,rgba(0,0,0,0.15) 55%,rgba(0,0,0,0.78) 100%);pointer-events:none;}.edp-about-visual-badge{position:absolute;left:16px;right:16px;bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-radius:14px;background:rgba(8,12,10,0.72);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(14px);overflow:hidden;}.edp-about-visual-logo{height:24px;width:auto;object-fit:contain;display:block;flex-shrink:0;}.edp-about-visual-caption{font-size:10.5px;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;color:rgba(255,255,255,0.75);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;}@media(min-width:640px){.edp-about-visual-badge{left:22px;right:22px;bottom:22px;padding:14px 18px;gap:16px;}.edp-about-visual-logo{height:28px;}.edp-about-visual-caption{font-size:12px;letter-spacing:0.06em;}}@media(min-width:1024px){.edp-about-section{padding:132px 0 152px;}.edp-about-container{padding:0 32px;}.edp-about-grid{grid-template-columns:1.05fr 0.95fr;gap:72px;}}</style><div class="edp-about-divider" aria-hidden="true"></div><div class="edp-about-glow" aria-hidden="true"></div><div class="edp-about-container"><div class="edp-about-grid"><div class="edp-about-content"><span class="edp-about-eyebrow">ABOUT THE PLATFORM</span><h2 class="edp-about-title">A Trusted Source for Environmental Data.</h2><p class="edp-about-lead">The Environmental Data Platform is Environment Agency – Abu Dhabi's central destination for environmental data discovery, access, and exploration.</p><p class="edp-about-body">By bringing together environmental datasets, applications, and information resources, the platform supports researchers, policymakers, organisations, and the public in developing a clearer understanding of Abu Dhabi's environment.</p><h3 class="edp-about-supporting">Connecting Data. Enabling Understanding.</h3><a href="https://edp.ead.ae/home/" class="edp-about-btn"><span>Learn More About EDP</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="edp-about-visual"><img src="/img/smart-apps/05-abu-dhabi-nature.jpg" alt="Abu Dhabi Nature Coastal Mangroves" loading="eager" class="edp-about-photo" /><div class="edp-about-visual-shade" aria-hidden="true"></div><div class="edp-about-visual-badge"><img src="/logo_ead_dark.png" alt="Environment Agency – Abu Dhabi" class="edp-about-visual-logo" /><span class="edp-about-visual-caption">Environmental Data Platform</span></div></div></div></div></section><section id="faq" class="scroll-mt-20 py-16 md:py-30 bg-black"><div data-nav-anchor="faq" aria-hidden="true" class="h-0 w-0"></div><div class="mx-auto grid max-w-shell grid-cols-1 gap-x-16 gap-y-10 px-3 sm:px-6 md:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.5fr)]"><div><span class="inline-flex items-center gap-[4px] w-fit h-[24px] rounded-[7px] text-[12px] font-normal uppercase tracking-[0.02em] leading-[166.7%] whitespace-nowrap select-none transition-colors duration-500 border-tag text-tag " style="padding:2.5px 6px 1px;border-width:1px;border-style:solid;border-color:var(--color-tag)">HELP &amp; SUPPORT</span><h2 class="mt-4 text-balance text-title sm:text-display lg:text-hero font-normal text-white">Have Questions? Start Here.</h2></div><div class="border-y divide-y divide-white/10 border-white/10"><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">What is the Environmental Data Platform?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 rotate-45"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:1fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-100 text-white/60">The Environmental Data Platform is a central digital destination for discovering and accessing environmental information related to Abu Dhabi.</p></div></div></div><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">What type of environmental data can I explore?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 "><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:0fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-0 text-white/60">You can explore available datasets covering air quality, water resources, marine environments, biodiversity, climate, land, and other environmental themes.</p></div></div></div><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">Who can use the Environmental Data Platform?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 "><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:0fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-0 text-white/60">The platform is designed to support environmental information discovery for researchers, government entities, organisations, and members of the public, subject to applicable access permissions.</p></div></div></div><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">Can I explore environmental information on maps?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 "><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:0fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-0 text-white/60">Where geospatial visualisation is supported, environmental information can be explored through interactive maps and geographical views.</p></div></div></div><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">How do I access environmental datasets?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 "><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:0fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-0 text-white/60">Use the platform's search and data catalogues to locate relevant datasets. Available access and download options depend on the selected resource.</p></div></div></div><div><button class="flex w-full items-center justify-between gap-6 py-6 text-left"><span class="text-heading font-normal text-white">Are all environmental datasets publicly available?</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="shrink-0 transition-transform duration-200 text-neutral-400 "><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button><div class="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none" style="grid-template-rows:0fr"><div class="overflow-hidden"><p class="max-w-[680px] pb-7 text-body transition-opacity duration-200 ease-out motion-reduce:transition-none opacity-0 text-white/60">Dataset accessibility may vary depending on publication status, information sensitivity, and applicable data access policies.</p></div></div></div></div></div></section><section id="environmental-discovery" data-nav="dark" class="relative w-full overflow-hidden bg-black text-white edp-cta-section"><style>.edp-cta-section{padding:140px 24px 150px;}.edp-cta-heading{display:flex;flex-direction:column;align-items:center;margin:28px 0 0;font-size:clamp(26px,4.6vw,58px);font-weight:400;letter-spacing:-0.025em;line-height:1.15;color:#ffffff;text-align:center;text-shadow:0 4px 20px rgba(0,0,0,0.55);}.edp-cta-btn-primary:hover{background:rgba(255,255,255,0.92)!important;transform:translateY(-1px);}.edp-cta-btn-secondary:hover{background:rgba(255,255,255,0.16)!important;border-color:rgba(255,255,255,0.45)!important;transform:translateY(-1px);}@media(max-width:768px){.edp-cta-section{padding:96px 20px 104px;}}</style><div class="pointer-events-none absolute inset-0"><img src="/edp_official_images/airquality.jpg" alt="Abu Dhabi Coastal Mangroves and Skyline" style="width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.72;filter:brightness(0.98) contrast(1.06) saturate(1.08)" /><div style="position:absolute;top:0;left:0;right:0;height:140px;background:linear-gradient(to bottom, #000000 0%, transparent 100%)"></div><div style="position:absolute;bottom:0;left:0;right:0;height:140px;background:linear-gradient(to top, #000000 0%, transparent 100%)"></div><div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(0,0,0,0.22) 0%, rgba(0,0,0,0.62) 100%)"></div></div><div style="position:relative;z-index:10;max-width:980px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center"><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 16px;border-radius:9999px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,0.25);background:rgba(0,0,0,0.65);backdrop-filter:blur(12px);color:rgba(255,255,255,0.9);box-shadow:0 4px 16px rgba(0,0,0,0.4)">YOUR ENVIRONMENT. YOUR DISCOVERY.</span><h2 class="edp-cta-heading"><span>The Future of Environmental</span><span>Understanding Starts Here.</span></h2><p style="margin:22px 0 0;max-width:660px;font-size:16px;line-height:1.6;color:rgba(255,255,255,0.75);font-weight:400;text-shadow:0 2px 10px rgba(0,0,0,0.5)">Discover environmental information, explore meaningful insights, and connect with the data shaping a more informed and sustainable Abu Dhabi.</p><div style="margin-top:38px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px"><a href="#use-cases" class="edp-cta-btn-primary" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 28px;border-radius:14px;background:#ffffff;color:#000000;font-size:15px;font-weight:500;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,0.35);transition:all 0.15s ease-out"><span>Explore Environmental Themes</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 12.5L12.5 3.5M12.5 3.5H5.5M12.5 3.5V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#edp-shipped-flow" class="edp-cta-btn-secondary" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 28px;border-radius:14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.3);color:#ffffff;font-size:15px;font-weight:500;text-decoration:none;backdrop-filter:blur(12px);transition:all 0.15s ease-out"><span>Discover Smart Applications</span></a></div></div></section><footer data-nav="dark" class="relative w-full flex-col overflow-hidden" style="background-color:#040806;color:#ffffff;border-top:1px solid rgba(255,255,255,0.08);"><style>.edp-footer-inner{max-width:1240px;margin:0 auto;padding:64px 24px 40px;}.edp-footer-top{display:flex;flex-direction:column;gap:48px;}@media(min-width:1024px){.edp-footer-top{flex-direction:row;justify-content:space-between;align-items:flex-start;}}.edp-footer-brand{display:flex;flex-direction:column;align-items:flex-start;max-width:440px;}.edp-footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;}@media(max-width:768px){.edp-footer-grid{grid-template-columns:repeat(2,1fr);gap:28px;}}@media(max-width:480px){.edp-footer-grid{grid-template-columns:1fr;gap:28px;}}.edp-footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;}.edp-footer-link{color:rgba(255,255,255,0.6);text-decoration:none;font-size:14px;transition:color 0.15s ease-out;}.edp-footer-link:hover{color:#ffffff;}.edp-contact-link{color:#00e699;text-decoration:none;font-size:14px;display:inline-flex;align-items:center;gap:4px;transition:opacity 0.15s ease-out;}.edp-contact-link:hover{opacity:0.8;}</style><div style="height:1px;width:100%;background:linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.18) 20%, rgba(0, 204, 136, 0.35) 50%, rgba(255, 255, 255, 0.18) 80%, transparent 100%);"></div><div class="edp-footer-inner"><div class="edp-footer-top"><div class="edp-footer-brand"><a href="https://www.ead.gov.ae" style="display:inline-block;margin-bottom:22px;"><img src="/logo_ead_dark.png" alt="Environment Agency – Abu Dhabi" style="height:42px;width:auto;object-fit:contain;filter:brightness(1.05);" /></a><div style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:6px;">ENVIRONMENT AGENCY – ABU DHABI</div><h3 style="margin:0;font-size:26px;font-weight:500;color:#ffffff;letter-spacing:-0.02em;">Environmental Data Platform</h3><p style="margin:14px 0 0;max-width:420px;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.6);">Connecting environmental knowledge, supporting informed decisions, and enabling a deeper understanding of Abu Dhabi's environment.</p></div><div class="edp-footer-grid"><div><h4 style="margin:0 0 16px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#ffffff;">Explore</h4><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;"><li><a href="#" class="edp-footer-link">Home</a></li><li><a href="#use-cases" class="edp-footer-link">Environmental Themes</a></li><li><a href="#edp-shipped-flow" class="edp-footer-link">Smart Applications</a></li><li><a href="#" class="edp-footer-link">Latest Updates</a></li></ul></div><div><h4 style="margin:0 0 16px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#ffffff;">Support</h4><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;"><li><a href="#faq" class="edp-footer-link">Help &amp; FAQs</a></li><li><a href="#" class="edp-footer-link">User Guide</a></li><li><a href="#" class="edp-footer-link">Data Policy</a></li><li><a href="#" class="edp-footer-link">Terms of Use</a></li><li><a href="#" class="edp-footer-link">Privacy Policy</a></li><li><a href="#" class="edp-footer-link">Accessibility</a></li></ul></div><div><h4 style="margin:0 0 16px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:#ffffff;">Contact</h4><ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;"><li><a href="https://www.ead.gov.ae" class="edp-footer-link">Environment Agency – Abu Dhabi</a></li><li><span style="font-size:14px;color:rgba(255,255,255,0.6);">Abu Dhabi, United Arab Emirates</span></li><li><a href="https://www.ead.gov.ae/en/contact-us" class="edp-contact-link"><span>Official contact details</span> <span style="font-size:12px;">↗</span></a></li></ul></div></div></div><div class="edp-footer-bottom"><div style="font-size:13px;color:rgba(255,255,255,0.45);">© 2026 Environment Agency – Abu Dhabi. All Rights Reserved.</div><div style="display:flex;align-items:center;gap:24px;font-size:13px;color:rgba(255,255,255,0.6);"><a href="#" class="edp-footer-link">Accessibility</a><span style="color:rgba(255,255,255,0.2);">•</span><a href="#" class="edp-footer-link">Sitemap</a><span style="color:rgba(255,255,255,0.2);">•</span><a href="#" class="edp-footer-link">English | العربية</a></div></div></div></footer></main><!--$--><!--/$--><div class="fixed inset-0 z-[110] transition-opacity duration-300 ease-out opacity-0 pointer-events-none" aria-hidden="true"><div class="absolute inset-0 bg-black/90 backdrop-blur-sm"></div><button aria-label="Close video" class="absolute top-5 right-5 sm:top-6 sm:right-6 z-10 p-3 text-white/60 hover:text-white active:text-white/70 transition-colors duration-300"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="4" x2="16" y2="16"></line><line x1="16" y1="4" x2="4" y2="16"></line></svg></button><div role="dialog" aria-modal="true" aria-label="Demo video" class="absolute inset-0 flex items-center justify-center p-4 sm:p-8 md:p-14 pointer-events-none"></div></div><script src="/_next/static/chunks/webpack-3e3201efe76e74c7.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n3:I[1402,[\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"177\",\"static/chunks/app/layout-989080e20db1d637.js\"],\"\"]\n8:I[7150,[],\"\"]\n:HL[\"/_next/static/css/c9ea9b6355867f69.css\",\"style\"]\n2:T52f,"])</script><script>self.__next_f.push([1,"\n@font-face {\n  font-family: 'Milling';\n  src: url('/fonts/205TF-Milling-Duplex1mm.woff2') format('woff2'),\n       url('/fonts/205TF-Milling-Duplex1mm.otf') format('opentype');\n  font-weight: normal; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Milling Triplex';\n  src: url('/fonts/205TF-Milling-Triplex1mm.woff2') format('woff2'),\n       url('/fonts/205TF-Milling-Triplex1mm.otf') format('opentype');\n  font-weight: normal; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Suisse Intl';\n  src: url('/fonts/SuisseIntl-Regular.woff2') format('woff2');\n  font-weight: 400; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Suisse Intl';\n  src: url('/fonts/SuisseIntl-Book.woff2') format('woff2');\n  font-weight: 450; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Suisse Intl';\n  src: url('/fonts/SuisseIntl-Medium.woff2') format('woff2');\n  font-weight: 500; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Suisse Intl';\n  src: url('/fonts/SuisseIntl-SemiBold.woff2') format('woff2');\n  font-weight: 600; font-style: normal; font-display: swap;\n}\n@font-face {\n  font-family: 'Suisse Intl';\n  src: url('/fonts/SuisseIntl-Bold.woff2') format('woff2');\n  font-weight: 700; font-style: normal; font-display: swap;\n}\n"])</script><script>self.__next_f.push([1,"4:T464,"])</script><script>self.__next_f.push([1,"{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://jockey.twelvelabs.io/#organization\",\"name\":\"TwelveLabs\",\"url\":\"https://www.twelvelabs.io\",\"logo\":\"https://jockey.twelvelabs.io/icon.svg\",\"sameAs\":[\"https://www.linkedin.com/company/twelvelabs/\",\"https://www.instagram.com/twelvelabs.io/\",\"https://www.youtube.com/@Twelve_Labs\",\"https://x.com/twelve_labs\"]},{\"@type\":\"WebSite\",\"@id\":\"https://jockey.twelvelabs.io/#website\",\"url\":\"https://jockey.twelvelabs.io\",\"name\":\"Jockey\",\"description\":\"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.\",\"publisher\":{\"@id\":\"https://jockey.twelvelabs.io/#organization\"}},{\"@type\":\"SoftwareApplication\",\"name\":\"Jockey\",\"applicationCategory\":\"DeveloperApplication\",\"operatingSystem\":\"Web\",\"url\":\"https://jockey.twelvelabs.io\",\"description\":\"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.\",\"publisher\":{\"@id\":\"https://jockey.twelvelabs.io/#organization\"}}]}"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"0_D4tbyy5LU-8FcAWXAb0\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/c9ea9b6355867f69.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"$2\"}}],[\"$\",\"$L3\",null,{\"id\":\"gtm-base\",\"strategy\":\"afterInteractive\",\"children\":\"(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\\nj=d.createElement(s),dl=l!='dataLayer'?'\u0026l='+l:'';j.async=true;j.src=\\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\\n})(window,document,'script','dataLayer','GTM-KTFL3HZG');\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://www.googletagmanager.com\"}],[\"$\",\"link\",null,{\"rel\":\"dns-prefetch\",\"href\":\"https://www.googletagmanager.com\"}],[\"$\",\"link\",null,{\"rel\":\"preload\",\"href\":\"/fonts/205TF-Milling-Triplex1mm.woff2\",\"as\":\"font\",\"type\":\"font/woff2\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"link\",null,{\"rel\":\"preload\",\"href\":\"/fonts/205TF-Milling-Duplex1mm.woff2\",\"as\":\"font\",\"type\":\"font/woff2\",\"crossOrigin\":\"anonymous\"}],[\"$\",\"script\",null,{\"type\":\"application/ld+json\",\"dangerouslySetInnerHTML\":{\"__html\":\"$4\"}}]]}],\"$L5\"]}]]}],{\"children\":[\"__PAGE__\",\"$L6\",{},null,false]},null,false],\"$L7\",false]],\"m\":\"$undefined\",\"G\":[\"$8\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"9:I[8089,[\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"177\",\"static/chunks/app/layout-989080e20db1d637.js\"],\"default\"]\na:I[6268,[\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"177\",\"static/chunks/app/layout-989080e20db1d637.js\"],\"VideoModalProvider\"]\nb:I[9766,[],\"\"]\nc:I[8924,[],\"\"]\nd:I[2454,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"LandingThemeProvider\"]\ne:I[6837,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\nf:I[2454,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"LandingThemeScope\"]\n10:I[6945,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367"])</script><script>self.__next_f.push([1,"\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"AudienceScreens\"]\n11:I[5128,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n12:I[5951,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n13:I[8077,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-"])</script><script>self.__next_f.push([1,"ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n14:I[1542,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n15:I[4818,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n16:I[3136,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n17:I[4579,[\"831\",\"static/chunks/bd904a5c-1ef0d6cda87f035e.js\",\"367\",\"static/chunks/b536a0f1-d1b33f1d8aa9bc78.js\",\"664\",\"static/chunks/a3cd4a83-8a3c1503f572f3e5.js\",\"413\",\"static/chunks/f6211eb1-2c03dc2860b4e393.js\",\"682\",\"static/chunks/b79b7"])</script><script>self.__next_f.push([1,"286-cc8bad25dded9f3c.js\",\"285\",\"static/chunks/285-b27d4396a781a659.js\",\"403\",\"static/chunks/403-bc262a4e416da998.js\",\"675\",\"static/chunks/675-951f3387f1bcfe92.js\",\"800\",\"static/chunks/800-ca6b49028a8e0d28.js\",\"778\",\"static/chunks/778-5ebbedba3105e4ce.js\",\"974\",\"static/chunks/app/page-14ad751b86e9d6b1.js\"],\"default\"]\n18:I[4431,[],\"OutletBoundary\"]\n1a:I[5278,[],\"AsyncMetadataOutlet\"]\n1c:I[4431,[],\"ViewportBoundary\"]\n1e:I[4431,[],\"MetadataBoundary\"]\n1f:\"$Sreact.suspense\"\n"])</script><script>self.__next_f.push([1,"5:[\"$\",\"body\",null,{\"children\":[[\"$\",\"noscript\",null,{\"children\":[\"$\",\"iframe\",null,{\"src\":\"https://www.googletagmanager.com/ns.html?id=GTM-KTFL3HZG\",\"height\":\"0\",\"width\":\"0\",\"style\":{\"display\":\"none\",\"visibility\":\"hidden\"}}]}],[\"$\",\"$L9\",null,{\"children\":[\"$\",\"$La\",null,{\"children\":[\"$\",\"$Lb\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Lc\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"6:[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"$Ld\",null,{\"children\":[\"$\",\"main\",null,{\"children\":[[\"$\",\"$Le\",null,{}],[\"$\",\"$Lf\",null,{\"theme\":\"dark\",\"children\":[\"$\",\"$L10\",null,{}]}],[\"$\",\"$L11\",null,{}],[\"$\",\"$Lf\",null,{\"theme\":\"light\",\"children\":[\"$\",\"$L12\",null,{}]}],[\"$\",\"$Lf\",null,{\"theme\":\"light\",\"children\":[\"$\",\"$L13\",null,{}]}],[\"$\",\"$Lf\",null,{\"theme\":\"light\",\"children\":[\"$\",\"$L14\",null,{}]}],[\"$\",\"$Lf\",null,{\"theme\":\"light\",\"children\":[\"$\",\"$L15\",null,{}]}],[\"$\",\"$Lf\",null,{\"theme\":\"dark\",\"children\":[[\"$\",\"$L16\",null,{}],[\"$\",\"$L17\",null,{}]]}]]}]}],null,[\"$\",\"$L18\",null,{\"children\":[\"$L19\",[\"$\",\"$L1a\",null,{\"promise\":\"$@1b\"}]]}]]}]\n7:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L1c\",null,{\"children\":\"$L1d\"}],null],[\"$\",\"$L1e\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$1f\",null,{\"fallback\":null,\"children\":\"$L20\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"1d:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, viewport-fit=cover\"}],[\"$\",\"meta\",\"2\",{\"name\":\"theme-color\",\"content\":\"#000000\"}]]\n19:null\n"])</script><script>self.__next_f.push([1,"21:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"1b:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Jockey by TwelveLabs: The Video Intelligence Agent\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"application-name\",\"content\":\"Jockey\"}],[\"$\",\"link\",\"3\",{\"rel\":\"author\",\"href\":\"https://www.twelvelabs.io\"}],[\"$\",\"meta\",\"4\",{\"name\":\"author\",\"content\":\"TwelveLabs\"}],[\"$\",\"meta\",\"5\",{\"name\":\"keywords\",\"content\":\"video understanding,video AI,video search,multimodal AI,video agents,Marengo,Pegasus,TwelveLabs,video embeddings,MCP,video analysis API\"}],[\"$\",\"meta\",\"6\",{\"name\":\"creator\",\"content\":\"TwelveLabs\"}],[\"$\",\"meta\",\"7\",{\"name\":\"publisher\",\"content\":\"TwelveLabs\"}],[\"$\",\"meta\",\"8\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"9\",{\"name\":\"googlebot\",\"content\":\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}],[\"$\",\"meta\",\"10\",{\"name\":\"category\",\"content\":\"technology\"}],[\"$\",\"link\",\"11\",{\"rel\":\"canonical\",\"href\":\"https://jockey.twelvelabs.io\"}],[\"$\",\"meta\",\"12\",{\"property\":\"og:title\",\"content\":\"Jockey by TwelveLabs: The Video Intelligence Agent\"}],[\"$\",\"meta\",\"13\",{\"property\":\"og:description\",\"content\":\"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.\"}],[\"$\",\"meta\",\"14\",{\"property\":\"og:url\",\"content\":\"https://jockey.twelvelabs.io\"}],[\"$\",\"meta\",\"15\",{\"property\":\"og:site_name\",\"content\":\"Jockey\"}],[\"$\",\"meta\",\"16\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"17\",{\"property\":\"og:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"18\",{\"property\":\"og:image:width\",\"content\":\"4824\"}],[\"$\",\"meta\",\"19\",{\"property\":\"og:image:height\",\"content\":\"2520\"}],[\"$\",\"meta\",\"20\",{\"property\":\"og:image:alt\",\"content\":\"Jockey — the agent layer for your video corpus\"}],[\"$\",\"meta\",\"21\",{\"property\":\"og:image\",\"content\":\"https://jockey.twelvelabs.io/opengraph-image.png?ec4c28927031908d\"}],[\"$\",\"meta\",\"22\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"23\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"24\",{\"name\":\"twitter:site\",\"content\":\"@twelve_labs\"}],[\"$\",\"meta\",\"25\",{\"name\":\"twitter:creator\",\"content\":\"@twelve_labs\"}],[\"$\",\"meta\",\"26\",{\"name\":\"twitter:title\",\"content\":\"Jockey by TwelveLabs: The Video Intelligence Agent\"}],[\"$\",\"meta\",\"27\",{\"name\":\"twitter:description\",\"content\":\"The TwelveLabs agent that organizes, searches, and assembles across your entire video library. Built on Pegasus and Marengo. Now in research preview.\"}],[\"$\",\"meta\",\"28\",{\"name\":\"twitter:image:type\",\"content\":\"image/png\"}],[\"$\",\"meta\",\"29\",{\"name\":\"twitter:image:width\",\"content\":\"4824\"}],[\"$\",\"meta\",\"30\",{\"name\":\"twitter:image:height\",\"content\":\"2520\"}],[\"$\",\"meta\",\"31\",{\"name\":\"twitter:image:alt\",\"content\":\"Jockey — the agent layer for your video corpus\"}],[\"$\",\"meta\",\"32\",{\"name\":\"twitter:image\",\"content\":\"https://jockey.twelvelabs.io/twitter-image.png?ec4c28927031908d\"}],[\"$\",\"link\",\"33\",{\"rel\":\"icon\",\"href\":\"/icon.svg\"}],[\"$\",\"$L21\",\"34\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"20:\"$1b:metadata\"\n"])</script>
+<script id="ead-logo-theme-sync">
+(function() {
+  function syncLogoTheme() {
+    const darkLogos = document.querySelectorAll('.ead-logo-dark');
+    const lightLogos = document.querySelectorAll('.ead-logo-light');
+    if (!darkLogos.length || !lightLogos.length) return;
+
+    const navLink = document.querySelector('.fixed.inset-x-0.top-0 a.text-fg') || document.querySelector('a[href="#use-cases"]');
+    let isLight = false;
+    if (navLink) {
+      const color = window.getComputedStyle(navLink).color;
+      const m = color.match(/\d+/g);
+      if (m && m.length >= 3) {
+        const luma = 0.299 * (+m[0]) + 0.587 * (+m[1]) + 0.114 * (+m[2]);
+        if (luma < 128) isLight = true;
+      }
+    }
+
+    darkLogos.forEach(el => el.style.display = isLight ? 'none' : 'block');
+    lightLogos.forEach(el => el.style.display = isLight ? 'block' : 'none');
+  }
+
+  window.addEventListener('scroll', syncLogoTheme, { passive: true });
+  window.addEventListener('resize', syncLogoTheme, { passive: true });
+  document.addEventListener('DOMContentLoaded', syncLogoTheme);
+  setInterval(syncLogoTheme, 400);
+})();
+</script>
+
+
+<script id="hide-floating-card-script">
+(function() {
+  function removeFloatingCard() {
+    var desktopCard = document.querySelector('.bottom-6.right-6.z-\\[30\\]') || 
+                        document.querySelector('div.pointer-events-none.absolute.bottom-6.right-6');
+    if (desktopCard) {
+      desktopCard.style.setProperty('display', 'none', 'important');
+      desktopCard.style.setProperty('visibility', 'hidden', 'important');
+      desktopCard.style.setProperty('opacity', '0', 'important');
+      desktopCard.style.setProperty('pointer-events', 'none', 'important');
+      desktopCard.setAttribute('hidden', 'true');
+    }
+    var mobileCard = document.querySelector('.z-\\[26\\].min-\\[64\\.0625rem\\]\\:hidden') || 
+                       document.querySelector('div.absolute.inset-x-0.bottom-0.z-\\[26\\]');
+    if (mobileCard) {
+      mobileCard.style.setProperty('display', 'none', 'important');
+      mobileCard.style.setProperty('visibility', 'hidden', 'important');
+      mobileCard.style.setProperty('opacity', '0', 'important');
+      mobileCard.style.setProperty('pointer-events', 'none', 'important');
+      mobileCard.setAttribute('hidden', 'true');
+    }
+    document.querySelectorAll('a[href*="claude.ai/directory/jockey"]').forEach(function(a) {
+      if (a.closest('.bottom-6.right-6') || a.closest('.z-\\[26\\]') || a.classList.contains('rounded-[inherit]')) {
+        var parent = a.closest('.group') || a.parentElement;
+        if (parent && !parent.closest('section#integration') && !parent.classList.contains('inline-flex')) {
+          var outer = parent.closest('.pointer-events-none') || parent;
+          outer.style.setProperty('display', 'none', 'important');
+          outer.style.setProperty('visibility', 'hidden', 'important');
+          outer.style.setProperty('opacity', '0', 'important');
+          outer.style.setProperty('pointer-events', 'none', 'important');
+        }
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeFloatingCard);
+  } else {
+    removeFloatingCard();
+  }
+  window.addEventListener('load', removeFloatingCard);
+  window.addEventListener('scroll', removeFloatingCard, { passive: true });
+  
+  try {
+    var observer = new MutationObserver(removeFloatingCard);
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['style', 'class']
+    });
+  } catch(e) {}
+})();
+</script>
+
+
+<script id="edp-popular-searches-script">
+(function() {
+  function initChips() {
+    document.querySelectorAll('.edp-chip').forEach(function(btn) {
+      if (btn.__edpInit) return;
+      btn.__edpInit = true;
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var query = btn.textContent.trim();
+        var placeholderPs = document.querySelectorAll('p:has-text("What environmental data"), p:has-text("Search environmental data, applications, themes.....")');
+        document.querySelectorAll('p').forEach(function(p) {
+          if (p.textContent.includes('What environmental') || p.textContent.includes('Search environmental data, applications, themes.....') || p.textContent.includes('Air quality')) {
+            p.textContent = query;
+            p.style.color = '#ffffff';
+          }
+        });
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChips);
+  } else {
+    initChips();
+  }
+  window.addEventListener('load', initChips);
+})();
+</script>
+
+<script id="edp-chips-enhancer">
+(function() {
+  function setupSearchAndChips() {
+    // 1. Setup chip click handlers
+    document.querySelectorAll('.edp-chip').forEach(function(btn) {
+      if (btn.__edpBound) return;
+      btn.__edpBound = true;
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var text = btn.textContent.trim();
+        var inputs = document.querySelectorAll('#edp-main-search-input, #edp-main-search-input-mobile, input[placeholder*="environmental data"]');
+        inputs.forEach(function(input) {
+          input.value = text;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+        if (inputs.length > 0) inputs[0].focus();
+      });
+    });
+
+    // 2. Ensure popular searches element exists under container j
+    var jContainer = document.querySelector('div.pointer-events-none.absolute.z-\\[15\\], div.pointer-events-none.absolute.min-\\[64\\.0625rem\\]\\:z-\\[37\\]');
+    if (jContainer && !jContainer.querySelector('.edp-popular-searches')) {
+      var popDiv = document.createElement('div');
+      popDiv.className = 'edp-popular-searches mt-3 flex flex-nowrap whitespace-nowrap items-center justify-center gap-1.5 text-xs pointer-events-auto select-none px-2 z-40 relative max-w-full';
+      popDiv.innerHTML = '<span class="text-white/60 font-medium text-[13px] mr-1">Popular Searches:</span>' +
+        ['Air Quality', 'Marine', 'Biodiversity', 'Water', 'Climate', 'Protected Areas'].map(function(term, idx) {
+          return (idx > 0 ? '<span class="text-white/25 mx-0.5">|</span>' : '') +
+            '<button type="button" class="edp-chip px-2.5 py-1 rounded-full text-white/80 hover:text-white bg-white/[0.08] hover:bg-white/[0.18] border border-white/15 hover:border-white/35 backdrop-blur-md transition-all text-[12px] cursor-pointer active:scale-95">' + term + '</button>';
+        }).join('');
+      jContainer.appendChild(popDiv);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupSearchAndChips);
+  } else {
+    setupSearchAndChips();
+  }
+  setInterval(setupSearchAndChips, 1000);
+})();
+</script>
+<script id="edp-scroll-search-controller">
+(function() {
+  function checkScroll() {
+    var isPastHero = (window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0) > 120;
+    if (isPastHero) {
+      if (!document.body.classList.contains('scrolled-past-hero')) {
+        document.body.classList.add('scrolled-past-hero');
+      }
+    } else {
+      if (document.body.classList.contains('scrolled-past-hero')) {
+        document.body.classList.remove('scrolled-past-hero');
+      }
+    }
+  }
+  window.addEventListener('scroll', checkScroll, { passive: true });
+  window.addEventListener('resize', checkScroll, { passive: true });
+  document.addEventListener('DOMContentLoaded', checkScroll);
+  setInterval(checkScroll, 100);
+  checkScroll();
+})();
+</script>
+<script id="edp-interactive-motion">
+(function() {
+  if (typeof window === 'undefined') return;
+
+  // 1. Top Scroll Progress Gradient Bar
+  let bar = document.getElementById('edp-scroll-progress');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'edp-scroll-progress';
+    document.body.appendChild(bar);
+  }
+  function updateProgress() {
+    const doc = document.documentElement;
+    const max = Math.max(1, doc.scrollHeight - window.innerHeight);
+    const pct = Math.min(100, Math.max(0, (window.scrollY / max) * 100));
+    bar.style.width = pct.toFixed(2) + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+  updateProgress();
+
+  // 2. Smooth Spring-Damped Cursor-Follow Ambient Glow across the page
+  let glow = document.getElementById('edp-cursor-glow');
+  if (!glow) {
+    glow = document.createElement('div');
+    glow.id = 'edp-cursor-glow';
+    document.body.appendChild(glow);
+  }
+  let gx = window.innerWidth / 2, gy = window.innerHeight / 2;
+  let tx = gx, ty = gy, glowVisible = false;
+  window.addEventListener('mousemove', e => {
+    tx = e.clientX;
+    ty = e.clientY;
+    if (!glowVisible) {
+      glowVisible = true;
+      glow.style.opacity = '1';
+    }
+  }, { passive: true });
+  document.addEventListener('mouseleave', () => {
+    glowVisible = false;
+    glow.style.opacity = '0';
+  });
+  (function animateGlow() {
+    gx += (tx - gx) * 0.11;
+    gy += (ty - gy) * 0.11;
+    glow.style.transform = 'translate3d(' + gx.toFixed(1) + 'px, ' + gy.toFixed(1) + 'px, 0)';
+    requestAnimationFrame(animateGlow);
+  })();
+
+  // 3. Mouse-Over Spotlight + 3D Micro-Tilt on Cards & Visuals
+  function bindInteractiveCards() {
+    const els = document.querySelectorAll('.edp-kpi-card, .edp-news-card, .edp-about-visual');
+    els.forEach(el => {
+      if (el.dataset.edpTiltBound) return;
+      el.dataset.edpTiltBound = '1';
+      el.addEventListener('mousemove', e => {
+        const r = el.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        el.style.setProperty('--mx', x + 'px');
+        el.style.setProperty('--my', y + 'px');
+        const rx = ((y / r.height) - 0.5) * -7;
+        const ry = ((x / r.width) - 0.5) * 7;
+        el.style.transform = 'perspective(900px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) translateY(-6px) scale(1.015)';
+      });
+      el.addEventListener('mouseleave', () => {
+        el.style.transform = '';
+      });
+    });
+  }
+
+  // 4. Smooth Scroll-Triggered Staggered Reveal Animations + Scroll Parallax on Visuals
+  let revealObs = null;
+  function bindScrollReveals() {
+    if (typeof IntersectionObserver === 'undefined') return;
+    if (!revealObs) {
+      revealObs = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('edp-reveal-in');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    }
+    const targets = document.querySelectorAll(
+      '#edp-shipped-flow .edp-ss-header, #environmental-glance .edp-kpi-header, #environmental-glance .edp-kpi-card, #whats-new .edp-news-header, #whats-new .edp-news-card, #about-platform .edp-about-content, #about-platform .edp-about-visual, #faq .mx-auto, #environmental-discovery > div:last-child'
+    );
+    targets.forEach((el, idx) => {
+      if (el.dataset.edpRevBound) return;
+      el.dataset.edpRevBound = '1';
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+        el.classList.add('edp-reveal-in');
+        return;
+      }
+      el.classList.add('edp-reveal-init');
+      el.style.transitionDelay = ((idx % 3) * 95) + 'ms';
+      revealObs.observe(el);
+    });
+  }
+
+  // Subtle continuous scroll-parallax on the About visual & CTA background photo
+  window.addEventListener('scroll', () => {
+    const ctaImg = document.querySelector('#environmental-discovery img');
+    if (ctaImg) {
+      const r = ctaImg.parentElement.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) {
+        const p = (window.innerHeight - r.top) / (window.innerHeight + r.height);
+        ctaImg.style.transform = 'scale(1.12) translateY(' + ((p - 0.5) * 36).toFixed(1) + 'px)';
+      }
+    }
+  }, { passive: true });
+
+  // 5. Disable navigation on all button/anchor links for now (keep in-page interactive widgets active)
+  function stripLinkTargets() {
+    document.querySelectorAll('a[target]').forEach(a => {
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+    });
+  }
+  stripLinkTargets();
+  document.addEventListener('click', function(e) {
+    const a = e.target && e.target.closest ? e.target.closest('a') : null;
+    if (!a) return;
+    if (a.classList.contains('edp-ss-card')) {
+      e.preventDefault();
+      return;
+    }
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+  }, true);
+
+  function initAll() {
+    bindInteractiveCards();
+    bindScrollReveals();
+    stripLinkTargets();
+  }
+  initAll();
+  setTimeout(initAll, 600);
+  setTimeout(initAll, 1800);
+  const mo = new MutationObserver(() => { bindInteractiveCards(); bindScrollReveals(); stripLinkTargets(); });
+  mo.observe(document.body, { childList: true, subtree: true });
+})();
+</script></body></html>

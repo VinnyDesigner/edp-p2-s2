@@ -1,0 +1,101 @@
+[
+  {
+    "idx": 0,
+    "tagName": "DIV",
+    "id": "",
+    "className": "relative w-full",
+    "dataNav": "",
+    "top": 0,
+    "height": 11974.5
+  },
+  {
+    "idx": 1,
+    "tagName": "SECTION",
+    "id": "",
+    "className": "relative w-full overflow-hidden",
+    "dataNav": "dark",
+    "top": 0,
+    "height": 900
+  },
+  {
+    "idx": 2,
+    "tagName": "SECTION",
+    "id": "use-cases",
+    "className": "relative w-full bg-black",
+    "dataNav": "dark",
+    "top": 11974.5,
+    "height": 2796
+  },
+  {
+    "idx": 3,
+    "tagName": "SECTION",
+    "id": "integration",
+    "className": "light relative scroll-mt-20 bg-white",
+    "dataNav": "light",
+    "top": 14770.5,
+    "height": 3328.625
+  },
+  {
+    "idx": 4,
+    "tagName": "SECTION",
+    "id": "",
+    "className": "light relative bg-white lg:hidden",
+    "dataNav": "light",
+    "top": 0,
+    "height": 0
+  },
+  {
+    "idx": 5,
+    "tagName": "SECTION",
+    "id": "models",
+    "className": "light relative w-full",
+    "dataNav": "light",
+    "top": 18099.125,
+    "height": 2430
+  },
+  {
+    "idx": 6,
+    "tagName": "SECTION",
+    "id": "",
+    "className": "pt-32 lg:pt-0 pb-16 md:pb-30 light bg-white",
+    "dataNav": "",
+    "top": 20529.125,
+    "height": 764.390625
+  },
+  {
+    "idx": 7,
+    "tagName": "SECTION",
+    "id": "",
+    "className": "py-16 md:py-30 light bg-white",
+    "dataNav": "",
+    "top": 21293.515625,
+    "height": 949.546875
+  },
+  {
+    "idx": 8,
+    "tagName": "SECTION",
+    "id": "",
+    "className": "pb-40 pt-28 md:pb-[216px] md:pt-36 light bg-white",
+    "dataNav": "",
+    "top": 22243.0625,
+    "height": 991
+  },
+  {
+    "idx": 9,
+    "tagName": "SECTION",
+    "id": "faq",
+    "className": "scroll-mt-20 py-16 md:py-30 bg-black",
+    "dataNav": "",
+    "top": 23234.0625,
+    "height": 672.53125
+  },
+  {
+    "idx": 10,
+    "tagName": "FOOTER",
+    "id": "",
+    "className": "relative flex min-h-[150svh] w-full flex-col overflow-hidden sm:min-h-svh bg-black",
+    "dataNav": "dark",
+    "top": 23906.59375,
+    "height": 900
+  }
+]

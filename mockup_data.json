@@ -1,0 +1,26 @@
+[
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black mb-8 min-h-0 flex-1 w-full",
+    "innerHTML": ""
+  },
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black h-full w-full",
+    "innerHTML": ""
+  },
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black p-3 @md:p-6 @xl:p-12 mb-8 min-h-0 flex-1 w-full",
+    "innerHTML": ""
+  },
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black p-3 @md:p-6 @xl:p-12 h-full w-full",
+    "innerHTML": ""
+  },
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black p-4 @md:p-6 @xl:p-12 mb-8 min-h-0 flex-1 w-full",
+    "innerHTML": ""
+  },
+  {
+    "className": "relative overflow-hidden rounded-xl border border-white/10 bg-black p-4 @md:p-6 @xl:p-12 h-full w-full",
+    "innerHTML": ""
+  }
+]

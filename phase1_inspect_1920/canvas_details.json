@@ -1,0 +1,32 @@
+[
+  {
+    "index": 0,
+    "width": 1857,
+    "height": 912,
+    "styleWidth": "1857px",
+    "styleHeight": "912px",
+    "parentTag": "DIV",
+    "parentClass": "absolute inset-0 h-full w-full ",
+    "webgl": {
+      "renderer": "WebKit WebGL",
+      "vendor": "WebKit",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
+    }
+  },
+  {
+    "index": 1,
+    "width": 1905,
+    "height": 1080,
+    "styleWidth": "1905px",
+    "styleHeight": "1080px",
+    "parentTag": "DIV",
+    "parentClass": "",
+    "webgl": {
+      "renderer": "WebKit WebGL",
+      "vendor": "WebKit",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "shadingLanguageVersion": "WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)"
+    }
+  }
+]
